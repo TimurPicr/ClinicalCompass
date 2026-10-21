@@ -1,0 +1,64 @@
+.container {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 30px;
+
+  background: white;
+  border-radius: 12px;
+}
+
+h1 {
+  color: #49376b;
+}
+
+.question {
+  margin-top: 25px;
+  padding: 20px;
+
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+}
+
+.question legend {
+  font-weight: bold;
+}
+
+.option {
+  display: block;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.option input {
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 25px;
+  padding: 12px 20px;
+
+  background: #49376b;
+  color: white;
+
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #aaaaaa;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 25px;
+  padding: 20px;
+
+  background: #f0ecfa;
+  border-radius: 8px;
+}
+
+.error {
+  color: darkred;
+}
