@@ -1,0 +1,197 @@
+{
+  "schema": "openai.presentation.layout/v5",
+  "unit": "px",
+  "slide": {
+    "id": "sl/8f2psfyx",
+    "index": 11,
+    "layout": {
+      "id": "ly/ux4ruhcv",
+      "name": "BLANK"
+    },
+    "masterLayoutId": "ly/atofqts7",
+    "backgroundColor": "rgba(25,29,45,1)",
+    "position": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "ly/ux4ruhcv",
+      "name": "BLANK",
+      "type": "blank",
+      "parentLayoutId": "ly/atofqts7",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "ly/atofqts7",
+      "type": "master",
+      "backgroundColor": "lt1",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "textbox",
+      "scope": "slide",
+      "id": "sh/apc3q143",
+      "editable": true,
+      "name": "Google Shape;153;p19",
+      "position": {
+        "left": 56,
+        "top": 67.36,
+        "width": 1168,
+        "height": 100
+      },
+      "geometry": "rect",
+      "lineWidth": 0,
+      "text": "Cпасибо за внимание!",
+      "style": {
+        "anchor": 1,
+        "fontSize": 99.33,
+        "typeface": "Helvetica Neue",
+        "color": "#ADC5FF",
+        "bold": true,
+        "italic": false,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "useParagraphSpacing": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Cпасибо за внимание!",
+          "style": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Cпасибо за внимание!",
+              "anchor": 1,
+              "fontSize": 99.33,
+              "typeface": "Helvetica Neue",
+              "color": "#ADC5FF",
+              "bold": true,
+              "alignment": "center",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "kind": "textbox",
+      "scope": "slide",
+      "id": "sh/lwnm5g3q",
+      "editable": true,
+      "name": "Google Shape;154;p19",
+      "position": {
+        "left": 56,
+        "top": 228.73,
+        "width": 1168,
+        "height": 100
+      },
+      "geometry": "rect",
+      "lineWidth": 0,
+      "text": "Команда Ф(Э)ФМ",
+      "style": {
+        "anchor": 1,
+        "fontSize": 64.67,
+        "typeface": "Helvetica Neue",
+        "color": "#FFFFFF",
+        "bold": true,
+        "italic": false,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "useParagraphSpacing": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Команда Ф(Э)ФМ",
+          "style": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Команда ",
+              "anchor": 1,
+              "fontSize": 64.67,
+              "typeface": "Helvetica Neue",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            },
+            {
+              "index": 2,
+              "text": "Ф(Э)ФМ",
+              "anchor": 1,
+              "fontSize": 64.67,
+              "typeface": "Helvetica Neue",
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "center",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        }
+      ]
+    }
+  ]
+}

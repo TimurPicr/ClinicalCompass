@@ -1,0 +1,1867 @@
+[
+  {
+    "patient_id": 18,
+    "name": "Павел Соколов",
+    "job_id": 61,
+    "status": "pending",
+    "attempts": 2,
+    "processed": true,
+    "model_result": {
+      "summary": "Пациент 44 лет, диагностированный с генерализованным тревожным расстройством, принимает эсциталопрам 10 мг утром. В последнее время отмечены два пропуска приёма, связанные с командировкой и опасениями тошноты. Симптомы тревоги остаются стабильными, но в некоторых днях ухудшились. Пациент отрицает тошноту после приёма, но сообщал о ней в прошлом. В анамнезе нет подтверждённой аллергии на амоксициллин, но пациент упоминает, что в детстве имел сыпь на этом препарате. В последнее время ухудшилась соновая активность, но не указано, что это связано с приёмом лекарства. В целом, состояние пациента не ухудшилось, но есть необходимость оценки причин пропусков приёма и возможной тошноты.",
+      "patient_summary": "Пациент 44 лет, диагностированный с генерализованным тревожным расстройством, принимает эсциталопрам 10 мг утром. В последнее время отмечены два пропуска приёма, связанные с командировкой и опасениями тошноты. Симптомы тревоги остаются стабильными, но в некоторых днях ухудшились. Пациент отрицает тошноту после приёма, но сообщал о ней в прошлом. В анамнезе нет подтверждённой аллергии на амоксициллин, но пациент упоминает, что в детстве имел сыпь на этом препарате. В последнее время ухудшилась соновая активность, но не указано, что это связано с приёмом лекарства. В целом, состояние пациента не ухудшилось, но есть необходимость оценки причин пропусков приёма и возможной тошноты.",
+      "facts": [],
+      "hypotheses": [],
+      "recommendations": [],
+      "changes": [
+        "Пациент отмечает ухудшение соновой активности в некоторых днях.",
+        "В анамнезе нет подтверждённой аллергии на амоксициллин, но пациент упоминает, что в детстве имел сыпь на этом препарате.",
+        "В последнее время отмечены два пропуска приёма, связанные с командировкой и опасениями тошноты."
+      ],
+      "risks": [
+        {
+          "level": "yellow",
+          "description": "Пациент отмечает ухудшение соновой активности в некоторых днях.",
+          "evidence": []
+        },
+        {
+          "level": "yellow",
+          "description": "В анамнезе нет подтверждённой аллергии на амоксициллин, но пациент упоминает, что в детстве имел сыпь на этом препарате.",
+          "evidence": []
+        },
+        {
+          "level": "yellow",
+          "description": "В последнее время отмечены два пропуска приёма, связанные с командировкой и опасениями тошноты.",
+          "evidence": []
+        }
+      ],
+      "explanation": "Пациент 44 лет, диагностированный с генерализованным тревожным расстройством, принимает эсциталопрам 10 мг утром. В последнее время отмечены два пропуска приёма, связанные с командировкой и опасениями тошноты. Симптомы тревоги остаются стабильными, но в некоторых днях ухудшились. Пациент отрицает тошноту после приёма, но сообщал о ней в прошлом. В анамнезе нет подтверждённой аллергии на амоксициллин, но пациент упоминает, что в детстве имел сыпь на этом препарате. В последнее время ухудшилась соновая активность, но не указано, что это связано с приёмом лекарства. В целом, состояние пациента не ухудшилось, но есть необходимость оценки причин пропусков приёма и возможной тошноты.",
+      "sources": [
+        {
+          "id": 89,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "page": null
+        },
+        {
+          "id": 112,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "page": null
+        },
+        {
+          "id": 82,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "page": null
+        },
+        {
+          "id": 93,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "page": null
+        }
+      ]
+    },
+    "validation_error": "Риск AI не привязан к доступным событиям пациента",
+    "input": {
+      "patient": {
+        "as_of": "2026-10-26T12:24:01.575294+00:00",
+        "event_order": "newest_first",
+        "timezone": "Europe/Moscow",
+        "birth_date": "1981-11-03",
+        "age": 44,
+        "confirmed_record": {
+          "diagnosis_code": "F41.1",
+          "diagnosis": "Генерализованное тревожное расстройство; неполная приверженность терапии",
+          "anamnesis": "Руководитель отдела, женат. В течение девяти месяцев почти ежедневно беспокоится о работе, здоровье родителей и финансах; тревогу трудно контролировать. Мышечное напряжение, раздражительность, трудности засыпания и сосредоточения. Утомляется, но выраженной ангедонии не описывает. Маниакальных эпизодов и психотических симптомов при расспросе нет. Небольшое улучшение сменилось усилением тревоги на фоне дедлайнов и пропусков; причинная связь не установлена.",
+          "allergies": "Сыпь после амоксициллина в прошлом со слов пациента; документального подтверждения нет, требует уточнения.",
+          "comorbidities": "Эпизодическая боль в пояснице; постоянных сопутствующих препаратов не принимает.",
+          "treatment_history": "Эсциталопрам назначен 2026-10-05: первые 7 дней 5 мг утром, с 2026-10-12 — 10 мг утром по ранее составленному врачом плану. В последние дни отметил два пропуска из-за командировки и опасений тошноты. Сообщение о тошноте после одного из приёмов требует оценки; лекарственная причинность не подтверждена. Работает с психотерапевтом над переносимостью неопределённости.",
+          "examinations": "Осмотр 2026-10-05: тревожен, ориентирован, продуктивному контакту доступен; ТТГ 2,0 мМЕ/л, ОАК без существенных отклонений. Кофеин: 3–4 чашки кофе в рабочий день. GAD-7: 15 → 13 → 16; PHQ-9: 7 → 8 → 7, пункт 9 — 0. На 2026-10-25 требуется обсудить нежелательное явление и причины пропусков, без автоматического изменения дозы.",
+          "notes": "СИНТЕТИЧЕСКИЙ пациент. Демосценарий realistic-v2/pavel. Имя, история, обследования и врачебные назначения вымышлены; это проверка программы, не клиническая валидация."
+        },
+        "patient_reported_unconfirmed": {
+          "anamnesis": "На прошлой неделе было чуть легче. В командировке дважды не выпил таблетку, один раз из-за опасений тошноты.",
+          "allergies": "В детстве была сыпь на амоксициллин; выписку не нашёл."
+        },
+        "deterministic_status": "yellow",
+        "active_alerts": [
+          {
+            "id": 20,
+            "level": "yellow",
+            "category": "side_effect",
+            "source": "rule:reported-side-effect",
+            "reason": "Со слов пациента: Тошнота примерно через час после приёма, продолжалась около получаса. Выраженность 4/10. Причинная связь с препаратом не установлена.",
+            "state": "new"
+          },
+          {
+            "id": 19,
+            "level": "yellow",
+            "category": "adherence",
+            "source": "rule:operational-adherence",
+            "reason": "За 7 дней отмечены 2 пропуска приёма. Организационное правило: уточнить трудности выполнения назначения.",
+            "state": "new"
+          },
+          {
+            "id": 18,
+            "level": "yellow",
+            "category": "scale_threshold",
+            "source": "rule:gad7-score",
+            "reason": "GAD-7: 16; уровень симптомов требует клинической оценки. Скрининг не является диагнозом.",
+            "state": "new"
+          }
+        ],
+        "alert_counts": {
+          "red": 0,
+          "yellow": 3
+        },
+        "diary_scale_direction": "mood/sleep/energy/wellbeing: 0 худшее,10 лучшее; anxiety: 0 нет,10 максимальная; sleep — качество сна, НЕ часы",
+        "diary": [
+          {
+            "id": 91,
+            "created_at": "2026-10-25T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Дедлайн завтра; тревожно и трудно сосредоточиться, собираюсь обсудить пропуски."
+          },
+          {
+            "id": 90,
+            "created_at": "2026-10-24T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 3,
+            "comment": "Приём отметил, выраженной тошноты сегодня не было."
+          },
+          {
+            "id": 89,
+            "created_at": "2026-10-23T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 5,
+            "wellbeing": 4,
+            "comment": "Не принял таблетку: испугался повторения тошноты."
+          },
+          {
+            "id": 88,
+            "created_at": "2026-10-22T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Через час после таблетки тошнило около получаса; хочу обсудить с врачом."
+          },
+          {
+            "id": 87,
+            "created_at": "2026-10-21T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 7,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "В дороге забыл утренний приём, отметил пропуск."
+          },
+          {
+            "id": 86,
+            "created_at": "2026-10-20T17:00:00+00:00",
+            "mood": 6,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Сроки на работе давят; вечером долго не мог расслабиться."
+          },
+          {
+            "id": 85,
+            "created_at": "2026-10-19T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Началась подготовка к командировке, снова трудно уснуть."
+          },
+          {
+            "id": 84,
+            "created_at": "2026-10-18T17:00:00+00:00",
+            "mood": 6,
+            "anxiety": 6,
+            "sleep": 5,
+            "energy": 4,
+            "wellbeing": 6,
+            "comment": "Сегодня тревога меньше, чем в начале наблюдения."
+          },
+          {
+            "id": 83,
+            "created_at": "2026-10-17T17:00:00+00:00",
+            "mood": 6,
+            "anxiety": 6,
+            "sleep": 6,
+            "energy": 5,
+            "wellbeing": 6,
+            "comment": "К вечеру устал, помогла короткая прогулка."
+          },
+          {
+            "id": 82,
+            "created_at": "2026-10-16T17:00:00+00:00",
+            "mood": 6,
+            "anxiety": 6,
+            "sleep": 5,
+            "energy": 5,
+            "wellbeing": 6,
+            "comment": "Смог работать без постоянной проверки сообщений."
+          }
+        ],
+        "questionnaires": [
+          {
+            "id": 27,
+            "created_at": "2026-10-25T17:00:00+00:00",
+            "assignment_id": 34,
+            "score": 16,
+            "answers": {
+              "q1": 3,
+              "q2": 3,
+              "q3": 2,
+              "q4": 2,
+              "q5": 2,
+              "q6": 2,
+              "q7": 2
+            }
+          },
+          {
+            "id": 24,
+            "created_at": "2026-10-25T17:00:00+00:00",
+            "assignment_id": 30,
+            "score": 7,
+            "answers": {
+              "q1": 1,
+              "q2": 0,
+              "q3": 2,
+              "q4": 1,
+              "q5": 1,
+              "q6": 0,
+              "q7": 2,
+              "q8": 0,
+              "q9": 0
+            }
+          },
+          {
+            "id": 26,
+            "created_at": "2026-10-15T17:00:00+00:00",
+            "assignment_id": 33,
+            "score": 13,
+            "answers": {
+              "q1": 2,
+              "q2": 2,
+              "q3": 2,
+              "q4": 2,
+              "q5": 1,
+              "q6": 2,
+              "q7": 2
+            }
+          },
+          {
+            "id": 23,
+            "created_at": "2026-10-15T17:00:00+00:00",
+            "assignment_id": 29,
+            "score": 8,
+            "answers": {
+              "q1": 1,
+              "q2": 0,
+              "q3": 2,
+              "q4": 2,
+              "q5": 1,
+              "q6": 0,
+              "q7": 2,
+              "q8": 0,
+              "q9": 0
+            }
+          }
+        ],
+        "questionnaire_definitions": {
+          "34": {
+            "name": "GAD-7",
+            "kind": "gad7",
+            "version": 1,
+            "score_max": 21,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Повышенная нервная возбудимость, беспокойство и раздражительность",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Неспособность справиться с волнением",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "Чрезмерное беспокойство по разному поводу",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Неспособность расслабиться",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Крайняя степень беспокойства: «не могу найти себе место»",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Легко поддаюсь чувству беспокойства или раздражительности",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Опасение чего-то страшного",
+                "type": "single"
+              }
+            ]
+          },
+          "30": {
+            "name": "PHQ-9",
+            "kind": "phq9",
+            "version": 1,
+            "score_max": 27,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Вас мало интересовали дела или ничто не доставляло удовольствие",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Вы испытывали чувство подавленности, депрессии или безнадежности",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "У вас были проблемы с засыпанием или со сном, или вы слишком много спали",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Вы чувствовали усталость или испытывали недостаток энергии",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Плохой аппетит или переедание",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Вы испытывали чувство неудовлетворенности собой. Или думали о том, что вы неудачник, или что подводите себя или свою семью",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Трудности с концентрацией внимания, например, когда читаете газету или смотрите телевизор",
+                "type": "single"
+              },
+              {
+                "id": "q8",
+                "label": "Вы делаете все или говорите так медленно, что другие люди начинают это замечать. Или наоборот — вам не сидится на месте или вы так неутомимы, что делаете гораздо больше, чем обычно",
+                "type": "single"
+              },
+              {
+                "id": "q9",
+                "label": "Вам приходят мысли, что лучше всего было бы умереть или вы пытались поранить себя каким-то образом",
+                "type": "single"
+              }
+            ]
+          },
+          "33": {
+            "name": "GAD-7",
+            "kind": "gad7",
+            "version": 1,
+            "score_max": 21,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Повышенная нервная возбудимость, беспокойство и раздражительность",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Неспособность справиться с волнением",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "Чрезмерное беспокойство по разному поводу",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Неспособность расслабиться",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Крайняя степень беспокойства: «не могу найти себе место»",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Легко поддаюсь чувству беспокойства или раздражительности",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Опасение чего-то страшного",
+                "type": "single"
+              }
+            ]
+          },
+          "29": {
+            "name": "PHQ-9",
+            "kind": "phq9",
+            "version": 1,
+            "score_max": 27,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Вас мало интересовали дела или ничто не доставляло удовольствие",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Вы испытывали чувство подавленности, депрессии или безнадежности",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "У вас были проблемы с засыпанием или со сном, или вы слишком много спали",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Вы чувствовали усталость или испытывали недостаток энергии",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Плохой аппетит или переедание",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Вы испытывали чувство неудовлетворенности собой. Или думали о том, что вы неудачник, или что подводите себя или свою семью",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Трудности с концентрацией внимания, например, когда читаете газету или смотрите телевизор",
+                "type": "single"
+              },
+              {
+                "id": "q8",
+                "label": "Вы делаете все или говорите так медленно, что другие люди начинают это замечать. Или наоборот — вам не сидится на месте или вы так неутомимы, что делаете гораздо больше, чем обычно",
+                "type": "single"
+              },
+              {
+                "id": "q9",
+                "label": "Вам приходят мысли, что лучше всего было бы умереть или вы пытались поранить себя каким-то образом",
+                "type": "single"
+              }
+            ]
+          }
+        },
+        "intakes": [
+          {
+            "id": 85,
+            "scheduled_at": "2026-10-25T06:00:00+00:00",
+            "actual_at": "2026-10-25T06:02:00+00:00",
+            "prescription_id": 9,
+            "version": 2,
+            "status": "taken",
+            "side_effect": "",
+            "severity": 0,
+            "reason": ""
+          },
+          {
+            "id": 84,
+            "scheduled_at": "2026-10-24T06:00:00+00:00",
+            "actual_at": "2026-10-24T06:11:00+00:00",
+            "prescription_id": 9,
+            "version": 2,
+            "status": "taken",
+            "side_effect": "",
+            "severity": 0,
+            "reason": ""
+          }
+        ],
+        "treatment_versions": [
+          {
+            "prescription_id": 9,
+            "version": 2,
+            "prescription_active": true,
+            "current_version": 2,
+            "created_at": "2026-10-11T21:00:00+00:00",
+            "data": {
+              "name": "Эсциталопрам",
+              "substance": "эсциталопрам",
+              "dose": "10",
+              "unit": "мг",
+              "times": [
+                "09:00"
+              ],
+              "start_date": "2026-10-05",
+              "end_date": null,
+              "comment": "Вымышленное назначение врача в синтетической истории; не рекомендация лечения."
+            }
+          },
+          {
+            "prescription_id": 9,
+            "version": 1,
+            "prescription_active": true,
+            "current_version": 2,
+            "created_at": "2026-10-04T21:00:00+00:00",
+            "data": {
+              "name": "Эсциталопрам",
+              "substance": "эсциталопрам",
+              "dose": "5",
+              "unit": "мг",
+              "times": [
+                "09:00"
+              ],
+              "start_date": "2026-10-05",
+              "end_date": null,
+              "comment": "Вымышленное назначение врача в синтетической истории; не рекомендация лечения."
+            }
+          }
+        ],
+        "context_limits": "Окно до 10 дневников, 10 ответов, 15 приёмов, 20 активных сигналов правил; старые события могут отсутствовать. Отсутствие отметки не означает пропуск.",
+        "evidence_refs": [
+          "diary:91",
+          "diary:90",
+          "diary:89",
+          "diary:88",
+          "diary:87",
+          "diary:86",
+          "diary:85",
+          "diary:84",
+          "diary:83",
+          "diary:82",
+          "questionnaire:27",
+          "questionnaire:24",
+          "questionnaire:26",
+          "questionnaire:23",
+          "intake:85",
+          "intake:84",
+          "alert:20",
+          "alert:19",
+          "alert:18",
+          "confirmed_record:diagnosis_code",
+          "confirmed_record:diagnosis",
+          "confirmed_record:anamnesis",
+          "confirmed_record:allergies",
+          "confirmed_record:comorbidities",
+          "confirmed_record:treatment_history",
+          "confirmed_record:examinations",
+          "confirmed_record:notes",
+          "patient_reported_unconfirmed:anamnesis",
+          "patient_reported_unconfirmed:allergies",
+          "treatment:9:2",
+          "treatment:9:1"
+        ]
+      },
+      "retrieved_sources": [
+        {
+          "id": 89,
+          "document_id": 5,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "source": "pubmed",
+          "category": "publication",
+          "content_type": "open_full_text",
+          "page": null,
+          "text": "athletic motivation 51 . Behavioral tests were conducted on days 7-8 to evaluate the effects of treatment on colitis-associated mental disorders ( Figure 7 A ). The open-field test trajectories ( Figure 7 B-i ) showed that the DSS + PBS group exhibited highly restricted movement. The DSS + TSPs group displayed trajectories resembling the health control group, with balanced movement between peripheral and center zones, preliminarily indicating restored motor function and reduced anxiety. Mice in the healthy control group traveled an average of approximately 900 cm ( Figure 7 B-ii ). In contrast, mice in the DSS + PBS group exhibited a dramatic reduction in total distance traveled, averaging less than 100 cm. DSS + TSPs group restored the total distance traveled to 934 cm, closely resembling health control group levels. Meanwhile, the longer resting time in the open field indicated higher levels of anxiety and less curiosity ( Figure 7 B-iii ). The DSS + TSPs group showed the greatest improvement, reflecting alleviated anxiety and restored curiosity.\n\nThe tail suspension test ( Figure 7 C-i ) assesses the depressive state by measuring the duration of immobility in mice. The DSS + PBS group showed a significant increase in immobility time to approximately 100 seconds, indicating severe behavioral despair ( Figure 7 C-ii ).",
+          "score": 0.320557
+        },
+        {
+          "id": 112,
+          "document_id": 5,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "source": "pubmed",
+          "category": "publication",
+          "content_type": "open_full_text",
+          "page": null,
+          "text": "clustering tree showing microbial community similarity among groups. Each column represents the mean of each group. Data are presented as means ± SD (n = 3).\n\nAlleviation effects of TSPs on colitis-associated mental disorders. (A) Experimental timeline and setup for DSS-induced colitis model and behavioral analysis. (B) The open field test: (i) Schematic diagram of the experiment and action roadmap results of mice, statistical results of total distance traveled (ii) and percentage of resting time (iii). (C) The tail suspension test. Schematic diagram (i) and statistical chart showing the immobility time (ii). (D) The beam walk test. Schematic diagram (i) and crossing times of mice across the beam (ii). Data are presented as means ± SD (n = 3). Statistical significance was determined using one-way ANOVA followed by an LSD post-hoc test. * P < 0.05, ** P < 0.01, *** P < 0.001, **** P < 0.0001, and ***** P < 0.00001.",
+          "score": 0.3157
+        },
+        {
+          "id": 82,
+          "document_id": 5,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "source": "pubmed",
+          "category": "publication",
+          "content_type": "open_full_text",
+          "page": null,
+          "text": "uggesting that TSPs promote M2 polarization by triggering key signaling pathways 37 .\n\nEnhanced therapeutic efficacy of TSPs in mitigating DSS-induced colitis\n\nThe therapeutic effects of each treatment on DSS-induced colitis were systematically evaluated ( Figure 4 A ). Over the 7-d observation period, mice in the DSS + PBS group progressively developed chronic colitis, characterized by continuous body weight loss, diarrhea, and hematochezia. On the final day, mice in the DSS + PBS group had lost nearly 15% of their initial body weight, with DAI scores up to 3.3 ± 0.3 ( Figure 4 B - C ). DAI scores in the DSS + EGCG group dropped to 1.8 ± 0.7, while in the DSS + TSPs group were only 1.0 ± 0.6, close to that of healthy mice. The DSS + TSPs group effectively alleviated diarrhea and hematochezia ( Figure 4 D ), while effectively restoring the levels of red blood cells, hemoglobin and hematocrit, thereby mitigating DSS-induced iron-deficiency anemia ( Figure S4 ).\n\nColon length, a critical marker of colitis severity, was evaluated 38 . In the DSS + PBS group, colons appeared significantly shortened with visible hemorrhagic areas, indicating extensive inflammation and epithelial damage ( Figure 4 F ).",
+          "score": 0.313552
+        },
+        {
+          "id": 93,
+          "document_id": 5,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "source": "pubmed",
+          "category": "publication",
+          "content_type": "open_full_text",
+          "page": null,
+          "text": "iating IBD-associated mental disorders 59 , 60 . Moreover, the therapeutic effects of TSPs are closely linked to EGCG's capacity to modulate the gut microbiota. Fecal microbiota transplantation (FMT) from EGCG-treated mice into colitis recipients significantly improved DAI scores, enriched SCFA-producing bacteria, and alleviated both intestinal and systemic inflammation 18 , 19 . Whereas sterile fecal filtrates failed to reproduce these effects. These findings suggest that the brain-related benefits observed in TSP-treated mice may be partly attributed to EGCG's role in modulating neuroimmune pathways via microbiota-derived signaling. TSPs enriched several SCFA-producing genera, and SCFAs like butyrate have been shown to strengthen tight junctions in endothelial cells while reducing microglial activation, thus fostering a more stable neuroimmune environment 17 , 19 . In addition, Lachnospiraceae has been associated with the production of myristic acid, a fatty acid shown to inhibit neuroinflammatory cascades and support synaptic health 47 . Given that the nucleus accumbens and hippocampus are particularly sensitive to inflammatory and metabolic cues 61 , the modulation of peripheral inflammation and gut-derived metabolites by TSPs may translate into behavioral improvements via enhanced neuroplasticity.",
+          "score": 0.309395
+        }
+      ]
+    }
+  },
+  {
+    "patient_id": 19,
+    "name": "Мария Лебедева",
+    "job_id": 63,
+    "status": "pending",
+    "attempts": 2,
+    "processed": true,
+    "model_result": {
+      "summary": "Требуется срочная оценка специалистом.",
+      "patient_summary": "Пациент 31 года, диагностирован с депрессивным эпизодом тяжёлой степени без психотических симптомов. В анамнезе: дизайнер, живёт с сестрой. В последнее время почти ежедневно снижено настроение и интересы, ранние пробуждения, снижение аппетита и энергии, чувство вины, выраженные трудности концентрации. Взяла отпуск из-за невозможности выполнять работу. Маниакальных/гипоманиакальных эпизодов и психотической симптоматики при расспросе не выявлено. В последней записи сообщает о мыслях, что лучше бы не просыпаться; непосредственная опасность и наличие плана по данным приложения не определены, требуется срочная непосредственная оценка специалистом.",
+      "facts": [
+        "Пациент 31 года, диагностирован с депрессивным эпизодом тяжёлой степени без психотических симптомов.",
+        "В анамнезе: дизайнер, живёт с сестрой.",
+        "В последнее время почти ежедневно снижено настроение и интересы, ранние пробуждения, снижение аппетита и энергии, чувство вины, выраженные трудности концентрации.",
+        "Взяла отпуск из-за невозможности выполнять работу.",
+        "Маниакальных/гипоманиакальных эпизодов и психотической симптоматики при расспросе не выявлено.",
+        "В последней записи сообщает о мыслях, что лучше бы не просыпаться; непосредственная опасность и наличие плана по данным приложения не определены, требуется срочная непосредственная оценка специалистом.",
+        "Пациент принимает Сертралин в дозе 100 мг в сутки.",
+        "В анамнезе отмечено, что пациент не имеет аллергий.",
+        "В анамнезе отмечено, что у пациента нет сопутствующих заболеваний."
+      ],
+      "hypotheses": [],
+      "recommendations": [],
+      "changes": [],
+      "risks": [
+        {
+          "level": "red",
+          "description": "Пациент отмечает мысли, что лучше бы не просыпаться, что может указывать на наличие мыслей о самоубийстве.",
+          "evidence": []
+        },
+        {
+          "level": "yellow",
+          "description": "Пациент отмечает ухудшение состояния, включая снижение настроения, интересов, энергии, чувство вины и трудности концентрации.",
+          "evidence": []
+        }
+      ],
+      "explanation": "Пациент отмечает ухудшение состояния, включая снижение настроения, интересов, энергии, чувство вины и трудности концентрации. В анамнезе отмечено ухудшение симптомов, что может быть связано с изменением дозы лекарства. В последнем ведомости пациент отмечает мысли, что лучше бы не просыпаться, что может указывать на наличие мыслей о самоубийстве. Пациент принимает Сертралин в дозе 100 мг в сутки. В анамнезе отмечено, что пациент не имеет аллергий. В анамнезе отмечено, что у пациента нет сопутствующих заболеваний. В последнем ведомости пациент отмечает ухудшение состояния, включая снижение настроения, интересов, энергии, чувство вины и трудности концентрации. В последнем ведомости пациент отмечает мысли, что лучше бы не просыпаться, что может указывать на наличие мыслей о самоубийстве.",
+      "sources": [
+        {
+          "id": 89,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "page": null
+        },
+        {
+          "id": 82,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "page": null
+        },
+        {
+          "id": 83,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "page": null
+        },
+        {
+          "id": 102,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "page": null
+        }
+      ]
+    },
+    "validation_error": "Риск AI не привязан к доступным событиям пациента",
+    "input": {
+      "patient": {
+        "as_of": "2026-10-26T12:24:58.520849+00:00",
+        "event_order": "newest_first",
+        "timezone": "Europe/Moscow",
+        "birth_date": "1995-07-24",
+        "age": 31,
+        "confirmed_record": {
+          "diagnosis_code": "F32.2",
+          "diagnosis": "Депрессивный эпизод тяжёлой степени без психотических симптомов; ухудшение",
+          "anamnesis": "Дизайнер, живёт с сестрой. Около десяти недель почти ежедневно снижены настроение и интересы, ранние пробуждения, снижение аппетита и энергии, чувство вины, выраженные трудности концентрации. Взяла отпуск из-за невозможности выполнять работу. Маниакальных/гипоманиакальных эпизодов и психотической симптоматики при расспросе не выявлено. В последней записи сообщает о мыслях, что лучше бы не просыпаться; непосредственная опасность и наличие плана по данным приложения не определены, требуется срочная непосредственная оценка специалистом.",
+          "allergies": "По результатам расспроса известных лекарственных аллергий нет.",
+          "comorbidities": "Мигрень без ауры в анамнезе, приступов за время наблюдения не отмечала.",
+          "treatment_history": "Сертралин 50 мг утром с 2026-10-05; после двух недель на врачебной встрече 2026-10-19 назначение изменено на 100 мг утром. В приложении отмечает регулярный приём. Ухудшение началось до изменения дозы; данных для вывода о причине нет. Психотерапевтическое сопровождение. Новый положительный ответ на пункт 9 требует отдельной срочной оценки, его нельзя отменить сведениями о приверженности.",
+          "examinations": "Осмотр 2026-10-05: сниженный фон настроения, замедление, сниженный аппетит; психотических симптомов не выявлено. ОАК и ТТГ без клинически значимых отклонений. PHQ-9: 19 → 21 → 24; пункт 9: 0 → 0 → 1. GAD-7: 10 → 11 → 12. На 2026-10-25 текущая безопасность не подтверждена; приложение не заменяет непосредственную оценку.",
+          "notes": "СИНТЕТИЧЕСКИЙ пациент. Демосценарий realistic-v2/maria. Имя, история, обследования и врачебные назначения вымышлены; это проверка программы, не клиническая валидация."
+        },
+        "patient_reported_unconfirmed": {
+          "anamnesis": "Сестра помогает с бытовыми делами. Последние дни всё труднее встать; иногда думаю, что лучше бы не просыпаться.",
+          "allergies": "Раньше лекарственных аллергий не замечала."
+        },
+        "deterministic_status": "red",
+        "active_alerts": [
+          {
+            "id": 21,
+            "level": "red",
+            "category": "self_harm_screen",
+            "source": "rule:phq9-item9",
+            "reason": "PHQ-9, вопрос 9: 1. Требуется срочная оценка специалистом; ответ сам по себе не определяет непосредственную опасность. При непосредственной угрозе обратитесь за неотложной медицинской помощью. Приложение не обеспечивает круглосуточного наблюдения.",
+            "state": "new"
+          },
+          {
+            "id": 23,
+            "level": "yellow",
+            "category": "scale_threshold",
+            "source": "rule:gad7-score",
+            "reason": "GAD-7: 12; уровень симптомов требует клинической оценки. Скрининг не является диагнозом.",
+            "state": "new"
+          },
+          {
+            "id": 22,
+            "level": "yellow",
+            "category": "scale_threshold",
+            "source": "rule:phq9-score",
+            "reason": "PHQ-9: 24; уровень симптомов требует клинической оценки. Скрининг не является диагнозом.",
+            "state": "new"
+          }
+        ],
+        "alert_counts": {
+          "red": 1,
+          "yellow": 2
+        },
+        "diary_scale_direction": "mood/sleep/energy/wellbeing: 0 худшее,10 лучшее; anxiety: 0 нет,10 максимальная; sleep — качество сна, НЕ часы",
+        "diary": [
+          {
+            "id": 112,
+            "created_at": "2026-10-25T17:00:00+00:00",
+            "mood": 2,
+            "anxiety": 7,
+            "sleep": 2,
+            "energy": 2,
+            "wellbeing": 2,
+            "comment": "Иногда думаю, что лучше бы не просыпаться. Хочу обсудить это с врачом; сестра сейчас рядом."
+          },
+          {
+            "id": 111,
+            "created_at": "2026-10-24T17:00:00+00:00",
+            "mood": 2,
+            "anxiety": 7,
+            "sleep": 2,
+            "energy": 2,
+            "wellbeing": 1,
+            "comment": "Сестра рядом, попросила её помочь связаться с врачом."
+          },
+          {
+            "id": 110,
+            "created_at": "2026-10-23T17:00:00+00:00",
+            "mood": 2,
+            "anxiety": 7,
+            "sleep": 2,
+            "energy": 3,
+            "wellbeing": 2,
+            "comment": "Снова почти не интересуюсь привычными занятиями."
+          },
+          {
+            "id": 109,
+            "created_at": "2026-10-22T17:00:00+00:00",
+            "mood": 2,
+            "anxiety": 7,
+            "sleep": 2,
+            "energy": 2,
+            "wellbeing": 2,
+            "comment": "Не хватает сил даже на короткую прогулку."
+          },
+          {
+            "id": 108,
+            "created_at": "2026-10-21T17:00:00+00:00",
+            "mood": 2,
+            "anxiety": 6,
+            "sleep": 2,
+            "energy": 2,
+            "wellbeing": 2,
+            "comment": "Проснулась рано, завтракала через силу."
+          },
+          {
+            "id": 107,
+            "created_at": "2026-10-20T17:00:00+00:00",
+            "mood": 3,
+            "anxiety": 7,
+            "sleep": 2,
+            "energy": 2,
+            "wellbeing": 2,
+            "comment": "Сосредоточиться на фильме не получилось."
+          },
+          {
+            "id": 106,
+            "created_at": "2026-10-19T17:00:00+00:00",
+            "mood": 2,
+            "anxiety": 7,
+            "sleep": 2,
+            "energy": 2,
+            "wellbeing": 2,
+            "comment": "После встречи отмечаю назначенную врачом новую дозу, пока выводов об эффекте не делаю."
+          },
+          {
+            "id": 105,
+            "created_at": "2026-10-18T17:00:00+00:00",
+            "mood": 3,
+            "anxiety": 6,
+            "sleep": 3,
+            "energy": 1,
+            "wellbeing": 2,
+            "comment": "Плохой сон, почти весь день чувствовала опустошение."
+          },
+          {
+            "id": 104,
+            "created_at": "2026-10-17T17:00:00+00:00",
+            "mood": 3,
+            "anxiety": 6,
+            "sleep": 4,
+            "energy": 2,
+            "wellbeing": 2,
+            "comment": "Сестра помогла с покупками, сама бы не справилась."
+          },
+          {
+            "id": 103,
+            "created_at": "2026-10-16T17:00:00+00:00",
+            "mood": 3,
+            "anxiety": 6,
+            "sleep": 3,
+            "energy": 2,
+            "wellbeing": 2,
+            "comment": "Даже привычные дела требуют больших усилий."
+          }
+        ],
+        "questionnaires": [
+          {
+            "id": 33,
+            "created_at": "2026-10-25T17:00:00+00:00",
+            "assignment_id": 42,
+            "score": 12,
+            "answers": {
+              "q1": 2,
+              "q2": 2,
+              "q3": 2,
+              "q4": 2,
+              "q5": 1,
+              "q6": 2,
+              "q7": 1
+            }
+          },
+          {
+            "id": 30,
+            "created_at": "2026-10-25T17:00:00+00:00",
+            "assignment_id": 38,
+            "score": 24,
+            "answers": {
+              "q1": 3,
+              "q2": 3,
+              "q3": 3,
+              "q4": 3,
+              "q5": 3,
+              "q6": 3,
+              "q7": 3,
+              "q8": 2,
+              "q9": 1
+            }
+          },
+          {
+            "id": 32,
+            "created_at": "2026-10-15T17:00:00+00:00",
+            "assignment_id": 41,
+            "score": 11,
+            "answers": {
+              "q1": 2,
+              "q2": 2,
+              "q3": 2,
+              "q4": 2,
+              "q5": 1,
+              "q6": 1,
+              "q7": 1
+            }
+          },
+          {
+            "id": 29,
+            "created_at": "2026-10-15T17:00:00+00:00",
+            "assignment_id": 37,
+            "score": 21,
+            "answers": {
+              "q1": 3,
+              "q2": 3,
+              "q3": 3,
+              "q4": 3,
+              "q5": 2,
+              "q6": 3,
+              "q7": 2,
+              "q8": 2,
+              "q9": 0
+            }
+          }
+        ],
+        "questionnaire_definitions": {
+          "42": {
+            "name": "GAD-7",
+            "kind": "gad7",
+            "version": 1,
+            "score_max": 21,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Повышенная нервная возбудимость, беспокойство и раздражительность",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Неспособность справиться с волнением",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "Чрезмерное беспокойство по разному поводу",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Неспособность расслабиться",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Крайняя степень беспокойства: «не могу найти себе место»",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Легко поддаюсь чувству беспокойства или раздражительности",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Опасение чего-то страшного",
+                "type": "single"
+              }
+            ]
+          },
+          "38": {
+            "name": "PHQ-9",
+            "kind": "phq9",
+            "version": 1,
+            "score_max": 27,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Вас мало интересовали дела или ничто не доставляло удовольствие",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Вы испытывали чувство подавленности, депрессии или безнадежности",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "У вас были проблемы с засыпанием или со сном, или вы слишком много спали",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Вы чувствовали усталость или испытывали недостаток энергии",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Плохой аппетит или переедание",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Вы испытывали чувство неудовлетворенности собой. Или думали о том, что вы неудачник, или что подводите себя или свою семью",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Трудности с концентрацией внимания, например, когда читаете газету или смотрите телевизор",
+                "type": "single"
+              },
+              {
+                "id": "q8",
+                "label": "Вы делаете все или говорите так медленно, что другие люди начинают это замечать. Или наоборот — вам не сидится на месте или вы так неутомимы, что делаете гораздо больше, чем обычно",
+                "type": "single"
+              },
+              {
+                "id": "q9",
+                "label": "Вам приходят мысли, что лучше всего было бы умереть или вы пытались поранить себя каким-то образом",
+                "type": "single"
+              }
+            ]
+          },
+          "41": {
+            "name": "GAD-7",
+            "kind": "gad7",
+            "version": 1,
+            "score_max": 21,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Повышенная нервная возбудимость, беспокойство и раздражительность",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Неспособность справиться с волнением",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "Чрезмерное беспокойство по разному поводу",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Неспособность расслабиться",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Крайняя степень беспокойства: «не могу найти себе место»",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Легко поддаюсь чувству беспокойства или раздражительности",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Опасение чего-то страшного",
+                "type": "single"
+              }
+            ]
+          },
+          "37": {
+            "name": "PHQ-9",
+            "kind": "phq9",
+            "version": 1,
+            "score_max": 27,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Вас мало интересовали дела или ничто не доставляло удовольствие",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Вы испытывали чувство подавленности, депрессии или безнадежности",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "У вас были проблемы с засыпанием или со сном, или вы слишком много спали",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Вы чувствовали усталость или испытывали недостаток энергии",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Плохой аппетит или переедание",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Вы испытывали чувство неудовлетворенности собой. Или думали о том, что вы неудачник, или что подводите себя или свою семью",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Трудности с концентрацией внимания, например, когда читаете газету или смотрите телевизор",
+                "type": "single"
+              },
+              {
+                "id": "q8",
+                "label": "Вы делаете все или говорите так медленно, что другие люди начинают это замечать. Или наоборот — вам не сидится на месте или вы так неутомимы, что делаете гораздо больше, чем обычно",
+                "type": "single"
+              },
+              {
+                "id": "q9",
+                "label": "Вам приходят мысли, что лучше всего было бы умереть или вы пытались поранить себя каким-то образом",
+                "type": "single"
+              }
+            ]
+          }
+        },
+        "intakes": [
+          {
+            "id": 106,
+            "scheduled_at": "2026-10-25T06:00:00+00:00",
+            "actual_at": "2026-10-25T06:02:00+00:00",
+            "prescription_id": 10,
+            "version": 2,
+            "status": "taken",
+            "side_effect": "",
+            "severity": 0,
+            "reason": ""
+          },
+          {
+            "id": 105,
+            "scheduled_at": "2026-10-24T06:00:00+00:00",
+            "actual_at": "2026-10-24T06:11:00+00:00",
+            "prescription_id": 10,
+            "version": 2,
+            "status": "taken",
+            "side_effect": "",
+            "severity": 0,
+            "reason": ""
+          }
+        ],
+        "treatment_versions": [
+          {
+            "prescription_id": 10,
+            "version": 2,
+            "prescription_active": true,
+            "current_version": 2,
+            "created_at": "2026-10-18T21:00:00+00:00",
+            "data": {
+              "name": "Сертралин",
+              "substance": "сертралин",
+              "dose": "100",
+              "unit": "мг",
+              "times": [
+                "09:00"
+              ],
+              "start_date": "2026-10-05",
+              "end_date": null,
+              "comment": "Вымышленное назначение врача в синтетической истории; не рекомендация лечения."
+            }
+          },
+          {
+            "prescription_id": 10,
+            "version": 1,
+            "prescription_active": true,
+            "current_version": 2,
+            "created_at": "2026-10-04T21:00:00+00:00",
+            "data": {
+              "name": "Сертралин",
+              "substance": "сертралин",
+              "dose": "50",
+              "unit": "мг",
+              "times": [
+                "09:00"
+              ],
+              "start_date": "2026-10-05",
+              "end_date": null,
+              "comment": "Вымышленное назначение врача в синтетической истории; не рекомендация лечения."
+            }
+          }
+        ],
+        "context_limits": "Окно до 10 дневников, 10 ответов, 15 приёмов, 20 активных сигналов правил; старые события могут отсутствовать. Отсутствие отметки не означает пропуск.",
+        "evidence_refs": [
+          "diary:112",
+          "diary:111",
+          "diary:110",
+          "diary:109",
+          "diary:108",
+          "diary:107",
+          "diary:106",
+          "diary:105",
+          "diary:104",
+          "diary:103",
+          "questionnaire:33",
+          "questionnaire:30",
+          "questionnaire:32",
+          "questionnaire:29",
+          "intake:106",
+          "intake:105",
+          "alert:21",
+          "alert:23",
+          "alert:22",
+          "confirmed_record:diagnosis_code",
+          "confirmed_record:diagnosis",
+          "confirmed_record:anamnesis",
+          "confirmed_record:allergies",
+          "confirmed_record:comorbidities",
+          "confirmed_record:treatment_history",
+          "confirmed_record:examinations",
+          "confirmed_record:notes",
+          "patient_reported_unconfirmed:anamnesis",
+          "patient_reported_unconfirmed:allergies",
+          "treatment:10:2",
+          "treatment:10:1"
+        ]
+      },
+      "retrieved_sources": [
+        {
+          "id": 89,
+          "document_id": 5,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "source": "pubmed",
+          "category": "publication",
+          "content_type": "open_full_text",
+          "page": null,
+          "text": "athletic motivation 51 . Behavioral tests were conducted on days 7-8 to evaluate the effects of treatment on colitis-associated mental disorders ( Figure 7 A ). The open-field test trajectories ( Figure 7 B-i ) showed that the DSS + PBS group exhibited highly restricted movement. The DSS + TSPs group displayed trajectories resembling the health control group, with balanced movement between peripheral and center zones, preliminarily indicating restored motor function and reduced anxiety. Mice in the healthy control group traveled an average of approximately 900 cm ( Figure 7 B-ii ). In contrast, mice in the DSS + PBS group exhibited a dramatic reduction in total distance traveled, averaging less than 100 cm. DSS + TSPs group restored the total distance traveled to 934 cm, closely resembling health control group levels. Meanwhile, the longer resting time in the open field indicated higher levels of anxiety and less curiosity ( Figure 7 B-iii ). The DSS + TSPs group showed the greatest improvement, reflecting alleviated anxiety and restored curiosity.\n\nThe tail suspension test ( Figure 7 C-i ) assesses the depressive state by measuring the duration of immobility in mice. The DSS + PBS group showed a significant increase in immobility time to approximately 100 seconds, indicating severe behavioral despair ( Figure 7 C-ii ).",
+          "score": 0.319904
+        },
+        {
+          "id": 82,
+          "document_id": 5,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "source": "pubmed",
+          "category": "publication",
+          "content_type": "open_full_text",
+          "page": null,
+          "text": "uggesting that TSPs promote M2 polarization by triggering key signaling pathways 37 .\n\nEnhanced therapeutic efficacy of TSPs in mitigating DSS-induced colitis\n\nThe therapeutic effects of each treatment on DSS-induced colitis were systematically evaluated ( Figure 4 A ). Over the 7-d observation period, mice in the DSS + PBS group progressively developed chronic colitis, characterized by continuous body weight loss, diarrhea, and hematochezia. On the final day, mice in the DSS + PBS group had lost nearly 15% of their initial body weight, with DAI scores up to 3.3 ± 0.3 ( Figure 4 B - C ). DAI scores in the DSS + EGCG group dropped to 1.8 ± 0.7, while in the DSS + TSPs group were only 1.0 ± 0.6, close to that of healthy mice. The DSS + TSPs group effectively alleviated diarrhea and hematochezia ( Figure 4 D ), while effectively restoring the levels of red blood cells, hemoglobin and hematocrit, thereby mitigating DSS-induced iron-deficiency anemia ( Figure S4 ).\n\nColon length, a critical marker of colitis severity, was evaluated 38 . In the DSS + PBS group, colons appeared significantly shortened with visible hemorrhagic areas, indicating extensive inflammation and epithelial damage ( Figure 4 F ).",
+          "score": 0.310597
+        },
+        {
+          "id": 83,
+          "document_id": 5,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "source": "pubmed",
+          "category": "publication",
+          "content_type": "open_full_text",
+          "page": null,
+          "text": "DSS + PBS group, colons appeared significantly shortened with visible hemorrhagic areas, indicating extensive inflammation and epithelial damage ( Figure 4 F ). DSS exposure reduced colon length to approximately 60% of the health control group, while the colon in the DSS + TSPs group restored it to over 90%, achieving a 2-fold improvement compared with other therapeutic groups ( Figure 4 E ). Spleen enlargement is often a sign of systemic immune activation. Spleen images ( Figure 4 H ) revealed marked enlargement in the DSS + PBS group, reflecting pronounced systemic inflammation. Compared to the other treatment groups, spleen weight and spleen index ( Figure 4 G and S5 ) in the DSS + TSPs group were closest to normal levels, suggesting reduced immune activation associated with colitis.\n\nSerum concentration of pro-inflammatory cytokines, increases BBB permeability, promoting neuroinflammation and impairing neural function 12 , 13 . Mice in the DSS + EGCG group and the DSS + TProtein group showed a reduction in pro-inflammatory cytokine (TNF-α, IL-6, and IL-12) levels by approximately 30-60% ( Figure 4 I-K ). The pro-inflammatory cytokine levels in the DSS + TSPs group decreased by nearly 40-70%. Additionally, the anti-inflammatory cytokine IL-10 showed the opposite trend ( Figure 4 L ).",
+          "score": 0.299148
+        },
+        {
+          "id": 102,
+          "document_id": 5,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "source": "pubmed",
+          "category": "publication",
+          "content_type": "open_full_text",
+          "page": null,
+          "text": "uidelines and were approved by the Animal Care and Use Committee of West China Hospital, Sichuan University. No adverse events were observed during the study.\n\nMice were randomly divided into five groups (n = 5 per group): (1) Health control group: received sterile drinking water throughout the experiment; (2) DSS + PBS group: received 2.5% DSS (MW: 40000, Adamas-beta) in drinking water for 8 d; (3) DSS + EGCG Group: Received 2.5% DSS in drinking water and were gavaged with EGCG (25 mg/kg/d) starting on day 2; (4) DSS + TProtein Group: Received 2.5% DSS in drinking water and were gavaged with TProtein starting on day 2; (5) DSS + TSPs Group: Received 2.5% DSS in drinking water and were gavaged with TSPs containing EGCG and TProtein starting on day 2. Mice were gavaged with 100 µL solution daily for 8 d.\n\nDuring the experiment, their environment was kept clean, with free access to food. Body weight, food intake, stool consistency, and rectal bleeding were recorded daily. DAI was calculated to assess colitis severity using the following formula: DAI = (Score for weight loss + Score for stool consistency + Score for rectal bleeding)/3. Weight loss: 0 (none), 1 (1%-5%), 2 (5%-10%), 3 (10%-20%), 4 (>20%). Stool consistency: 0 (normal), 2 (loose), 3-4 (diarrhea). Rectal bleeding: 0 (none), 1 (+), 2 (++), 3 (+++), 4 (++++).\n\nBehavioral tests",
+          "score": 0.298061
+        }
+      ]
+    }
+  },
+  {
+    "patient_id": 20,
+    "name": "Андрей Авиандров",
+    "job_id": 65,
+    "status": "pending",
+    "attempts": 2,
+    "processed": true,
+    "model_result": {
+      "summary": "Пациент 39 лет, диагностированный с генерализованным тревожным расстройством. Симптомы включают постоянное беспокойство по работе, здоровью близких и финансовым обязательствам, раздражительность, мышечное напряжение, трудности с концентрацией и сном. Сон составляет около 5–6 часов, но качество сна низкое. Пациент не описывает приступов паники, стойкой ангедонии, мании/гипомании или мыслей о смерти и самоповреждении. Психотропных препаратов не принимал. План приёма: обсудить терапию ГТР, включая возможность назначения Авиандра по действующей инструкции после повторной проверки противопоказаний и взаимодействий. Препарат ещё не назначен, приёмов нет. Пациент работает из дома, не вождёт автомобиль.",
+      "patient_summary": "Пациент 39 лет, диагностированный с генерализованным тревожным расстройством. Симптомы включают постоянное беспокойство по работе, здоровью близких и финансовым обязательствам, раздражительность, мышечное напряжение, трудности с концентрацией и сном. Сон составляет около 5–6 часов, но качество сна низкое. Пациент не описывает приступов паники, стойкой ангедонии, мании/гипомании или мыслей о смерти и самоповреждении. Психотропных препаратов не принимал. План приёма: обсудить терапию ГТР, включая возможность назначения Авиандра по действующей инструкции после повторной проверки противопоказаний и взаимодействий. Препарат ещё не назначен, приёмов нет. Пациент работает из дома, не вождёт автомобиль.",
+      "facts": [],
+      "hypotheses": [],
+      "recommendations": [],
+      "changes": [],
+      "risks": [
+        {
+          "level": "yellow",
+          "description": "Пациент испытывает постоянное беспокойство, раздражительность, мышечное напряжение, трудности с концентрацией и сном. Сон составляет около 5–6 часов, но качество сна низкое.",
+          "evidence": []
+        }
+      ],
+      "explanation": "Пациент 39 лет, диагностированный с генерализованным тревожным расстройством. Симптомы включают постоянное беспокойство по работе, здоровью близких и финансовым обязательствам, раздражительность, мышечное напряжение, трудности с концентрацией и сном. Сон составляет около 5–6 часов, но качество сна низкое. Пациент не описывает приступов паники, стойкой ангедонии, мании/гипомании или мыслей о смерти и самоповреждении. Психотропных препаратов не принимал. План приёма: обсудить терапию ГТР, включая возможность назначения Авиандра по действующей инструкции после повторной проверки противопоказаний и взаимодействий. Препарат ещё не назначен, приёмов нет. Пациент работает из дома, не вождёт автомобиль.",
+      "sources": [
+        {
+          "id": 3,
+          "title": "PHQ/GAD: фактическая выдержка из руководства авторов, страницы 6 и 8 оригинала",
+          "url": "https://www.phqscreeners.com/images/sites/g/files/g10016261/f/201412/instructions.pdf",
+          "page": 6
+        },
+        {
+          "id": 112,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "page": null
+        },
+        {
+          "id": 89,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "page": null
+        },
+        {
+          "id": 93,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "page": null
+        }
+      ]
+    },
+    "validation_error": "Риск AI не привязан к доступным событиям пациента",
+    "input": {
+      "patient": {
+        "as_of": "2026-10-26T12:25:53.998718+00:00",
+        "event_order": "newest_first",
+        "timezone": "Europe/Moscow",
+        "birth_date": "1987-09-08",
+        "age": 39,
+        "confirmed_record": {
+          "diagnosis_code": "F41.1",
+          "diagnosis": "Генерализованное тревожное расстройство; подбор терапии на врачебном приёме",
+          "anamnesis": "Системный аналитик, работает удалённо, живёт с партнёршей. Более восьми месяцев почти ежедневно испытывает трудно контролируемое беспокойство о нескольких сферах: работе, здоровье близких, финансовых обязательствах. Внутреннее напряжение, раздражительность, напряжение мышц шеи, трудности концентрации и засыпания. Из-за повторных проверок задач задерживается на работе, сон около 5–6 часов при низком субъективном качестве. Не описывает изолированных приступов паники, стойкой ангедонии, мании/гипомании; мыслей о смерти и самоповреждении не сообщает. Диагноз установлен врачом по беседе и длительности/влиянию симптомов, а не только по GAD-7.",
+          "allergies": "Известных аллергий на лекарства и компоненты препаратов при расспросе нет. Наследственную непереносимость галактозы, дефицит лактазы и глюкозо-галактозную мальабсорбцию отрицает.",
+          "comorbidities": "Эпилепсия, органические заболевания головного мозга, заболевания печени и почек в анамнезе не выявлены. Существенных сердечно-сосудистых и эндокринных заболеваний по имеющимся обследованиям нет. Алкогольной или наркотической зависимости при расспросе не выявлено.",
+          "treatment_history": "Четыре встречи с психотерапевтом, коррекция сна и кофеина; тревога мешает работе. Психотропных препаратов ранее не принимал; постоянных лекарств, БАД и зверобоя нет. ИМАО, в том числе в последние две недели, не использовал; серотонинергические средства и ингибиторы CYP2D6 при сверке не выявлены. План приёма: обсудить терапию ГТР, включая возможность назначения Авиандра по действующей инструкции после повторной проверки противопоказаний и взаимодействий. Препарат ещё не назначен, приёмов нет. Это вариант для решения врача, не обязательный выбор и не назначение AI. Обсуждены ограничения на вождение и работу с механизмами; работает из дома, автомобиль не водит.",
+          "examinations": "Осмотр 2026-10-05: контактный, ориентирован, речь последовательная, заметное мышечное напряжение; психотических симптомов не выявлено. АД 122/78 мм рт. ст., пульс 76/мин. ТТГ 1,6 мМЕ/л, гемоглобин 148 г/л, креатинин 82 мкмоль/л, расчётная СКФ 104 мл/мин/1,73 м²; АЛТ 21 Ед/л, АСТ 19 Ед/л, билирубин 12 мкмоль/л. Соматические причины тревоги оценены врачом. GAD-7: 16 → 17 → 18; PHQ-9: 5 → 6 → 6, пункт 9 во всех анкетах — 0. Повторная оценка плана лечения назначена после 2026-10-25.",
+          "notes": "СИНТЕТИЧЕСКИЙ пациент. Демосценарий realistic-v2/andrey. Имя, история, обследования и врачебные назначения вымышлены; это проверка программы, не клиническая валидация."
+        },
+        "patient_reported_unconfirmed": {
+          "anamnesis": "Понимаю, что часть переживаний чрезмерная, но остановить их трудно. Перепроверяю работу, плохо засыпаю, хочу обсудить лечение.",
+          "treatment_history": "Лекарства, БАД, травяные сборы не принимаю. Машину не вожу."
+        },
+        "deterministic_status": "yellow",
+        "active_alerts": [
+          {
+            "id": 24,
+            "level": "yellow",
+            "category": "scale_threshold",
+            "source": "rule:gad7-score",
+            "reason": "GAD-7: 18; уровень симптомов требует клинической оценки. Скрининг не является диагнозом.",
+            "state": "new"
+          }
+        ],
+        "alert_counts": {
+          "red": 0,
+          "yellow": 1
+        },
+        "diary_scale_direction": "mood/sleep/energy/wellbeing: 0 худшее,10 лучшее; anxiety: 0 нет,10 максимальная; sleep — качество сна, НЕ часы",
+        "diary": [
+          {
+            "id": 133,
+            "created_at": "2026-10-25T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Хочу обсудить варианты лечения: тревога мешает работе и сну, лекарств пока не принимаю."
+          },
+          {
+            "id": 132,
+            "created_at": "2026-10-24T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 3,
+            "comment": "Собрал результаты обследований для врачебного приёма."
+          },
+          {
+            "id": 131,
+            "created_at": "2026-10-23T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 5,
+            "wellbeing": 4,
+            "comment": "Долго засыпал, утром тяжело сосредоточиться."
+          },
+          {
+            "id": 130,
+            "created_at": "2026-10-22T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Вечером хотелось отдохнуть, но мысли возвращались к работе."
+          },
+          {
+            "id": 129,
+            "created_at": "2026-10-21T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 7,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Партнёрша заметила, что я чаще раздражаюсь."
+          },
+          {
+            "id": 128,
+            "created_at": "2026-10-20T17:00:00+00:00",
+            "mood": 6,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Несколько раз проверял отправленное письмо, заснул поздно."
+          },
+          {
+            "id": 127,
+            "created_at": "2026-10-19T17:00:00+00:00",
+            "mood": 5,
+            "anxiety": 8,
+            "sleep": 3,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Психотерапия помогает понимать тревогу, но напряжение остаётся."
+          },
+          {
+            "id": 126,
+            "created_at": "2026-10-18T17:00:00+00:00",
+            "mood": 6,
+            "anxiety": 8,
+            "sleep": 4,
+            "energy": 3,
+            "wellbeing": 5,
+            "comment": "По дороге на прогулку снова прокручивал финансовые вопросы."
+          },
+          {
+            "id": 125,
+            "created_at": "2026-10-17T17:00:00+00:00",
+            "mood": 6,
+            "anxiety": 8,
+            "sleep": 5,
+            "energy": 4,
+            "wellbeing": 5,
+            "comment": "Раздражался из-за мелочей, напряжение держалось весь день."
+          },
+          {
+            "id": 124,
+            "created_at": "2026-10-16T17:00:00+00:00",
+            "mood": 6,
+            "anxiety": 8,
+            "sleep": 4,
+            "energy": 4,
+            "wellbeing": 5,
+            "comment": "Трудно сосредоточиться на чтении из-за тревожных мыслей."
+          }
+        ],
+        "questionnaires": [
+          {
+            "id": 39,
+            "created_at": "2026-10-25T17:00:00+00:00",
+            "assignment_id": 50,
+            "score": 18,
+            "answers": {
+              "q1": 3,
+              "q2": 3,
+              "q3": 3,
+              "q4": 3,
+              "q5": 2,
+              "q6": 2,
+              "q7": 2
+            }
+          },
+          {
+            "id": 36,
+            "created_at": "2026-10-25T17:00:00+00:00",
+            "assignment_id": 46,
+            "score": 6,
+            "answers": {
+              "q1": 0,
+              "q2": 0,
+              "q3": 2,
+              "q4": 2,
+              "q5": 0,
+              "q6": 0,
+              "q7": 2,
+              "q8": 0,
+              "q9": 0
+            }
+          },
+          {
+            "id": 38,
+            "created_at": "2026-10-15T17:00:00+00:00",
+            "assignment_id": 49,
+            "score": 17,
+            "answers": {
+              "q1": 3,
+              "q2": 3,
+              "q3": 3,
+              "q4": 2,
+              "q5": 2,
+              "q6": 2,
+              "q7": 2
+            }
+          },
+          {
+            "id": 35,
+            "created_at": "2026-10-15T17:00:00+00:00",
+            "assignment_id": 45,
+            "score": 6,
+            "answers": {
+              "q1": 0,
+              "q2": 0,
+              "q3": 2,
+              "q4": 2,
+              "q5": 0,
+              "q6": 0,
+              "q7": 2,
+              "q8": 0,
+              "q9": 0
+            }
+          },
+          {
+            "id": 37,
+            "created_at": "2026-10-05T17:00:00+00:00",
+            "assignment_id": 48,
+            "score": 16,
+            "answers": {
+              "q1": 3,
+              "q2": 3,
+              "q3": 3,
+              "q4": 2,
+              "q5": 2,
+              "q6": 2,
+              "q7": 1
+            }
+          }
+        ],
+        "questionnaire_definitions": {
+          "50": {
+            "name": "GAD-7",
+            "kind": "gad7",
+            "version": 1,
+            "score_max": 21,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Повышенная нервная возбудимость, беспокойство и раздражительность",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Неспособность справиться с волнением",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "Чрезмерное беспокойство по разному поводу",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Неспособность расслабиться",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Крайняя степень беспокойства: «не могу найти себе место»",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Легко поддаюсь чувству беспокойства или раздражительности",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Опасение чего-то страшного",
+                "type": "single"
+              }
+            ]
+          },
+          "46": {
+            "name": "PHQ-9",
+            "kind": "phq9",
+            "version": 1,
+            "score_max": 27,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Вас мало интересовали дела или ничто не доставляло удовольствие",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Вы испытывали чувство подавленности, депрессии или безнадежности",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "У вас были проблемы с засыпанием или со сном, или вы слишком много спали",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Вы чувствовали усталость или испытывали недостаток энергии",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Плохой аппетит или переедание",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Вы испытывали чувство неудовлетворенности собой. Или думали о том, что вы неудачник, или что подводите себя или свою семью",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Трудности с концентрацией внимания, например, когда читаете газету или смотрите телевизор",
+                "type": "single"
+              },
+              {
+                "id": "q8",
+                "label": "Вы делаете все или говорите так медленно, что другие люди начинают это замечать. Или наоборот — вам не сидится на месте или вы так неутомимы, что делаете гораздо больше, чем обычно",
+                "type": "single"
+              },
+              {
+                "id": "q9",
+                "label": "Вам приходят мысли, что лучше всего было бы умереть или вы пытались поранить себя каким-то образом",
+                "type": "single"
+              }
+            ]
+          },
+          "49": {
+            "name": "GAD-7",
+            "kind": "gad7",
+            "version": 1,
+            "score_max": 21,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Повышенная нервная возбудимость, беспокойство и раздражительность",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Неспособность справиться с волнением",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "Чрезмерное беспокойство по разному поводу",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Неспособность расслабиться",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Крайняя степень беспокойства: «не могу найти себе место»",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Легко поддаюсь чувству беспокойства или раздражительности",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Опасение чего-то страшного",
+                "type": "single"
+              }
+            ]
+          },
+          "45": {
+            "name": "PHQ-9",
+            "kind": "phq9",
+            "version": 1,
+            "score_max": 27,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Вас мало интересовали дела или ничто не доставляло удовольствие",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Вы испытывали чувство подавленности, депрессии или безнадежности",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "У вас были проблемы с засыпанием или со сном, или вы слишком много спали",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Вы чувствовали усталость или испытывали недостаток энергии",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Плохой аппетит или переедание",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Вы испытывали чувство неудовлетворенности собой. Или думали о том, что вы неудачник, или что подводите себя или свою семью",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Трудности с концентрацией внимания, например, когда читаете газету или смотрите телевизор",
+                "type": "single"
+              },
+              {
+                "id": "q8",
+                "label": "Вы делаете все или говорите так медленно, что другие люди начинают это замечать. Или наоборот — вам не сидится на месте или вы так неутомимы, что делаете гораздо больше, чем обычно",
+                "type": "single"
+              },
+              {
+                "id": "q9",
+                "label": "Вам приходят мысли, что лучше всего было бы умереть или вы пытались поранить себя каким-то образом",
+                "type": "single"
+              }
+            ]
+          },
+          "48": {
+            "name": "GAD-7",
+            "kind": "gad7",
+            "version": 1,
+            "score_max": 21,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Повышенная нервная возбудимость, беспокойство и раздражительность",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Неспособность справиться с волнением",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "Чрезмерное беспокойство по разному поводу",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Неспособность расслабиться",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Крайняя степень беспокойства: «не могу найти себе место»",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Легко поддаюсь чувству беспокойства или раздражительности",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Опасение чего-то страшного",
+                "type": "single"
+              }
+            ]
+          }
+        },
+        "intakes": [],
+        "treatment_versions": [],
+        "context_limits": "Окно до 10 дневников, 10 ответов, 15 приёмов, 20 активных сигналов правил; старые события могут отсутствовать. Отсутствие отметки не означает пропуск.",
+        "evidence_refs": [
+          "diary:133",
+          "diary:132",
+          "diary:131",
+          "diary:130",
+          "diary:129",
+          "diary:128",
+          "diary:127",
+          "diary:126",
+          "diary:125",
+          "diary:124",
+          "questionnaire:39",
+          "questionnaire:36",
+          "questionnaire:38",
+          "questionnaire:35",
+          "questionnaire:37",
+          "alert:24",
+          "confirmed_record:diagnosis_code",
+          "confirmed_record:diagnosis",
+          "confirmed_record:anamnesis",
+          "confirmed_record:allergies",
+          "confirmed_record:comorbidities",
+          "confirmed_record:treatment_history",
+          "confirmed_record:examinations",
+          "confirmed_record:notes",
+          "patient_reported_unconfirmed:anamnesis",
+          "patient_reported_unconfirmed:treatment_history"
+        ]
+      },
+      "retrieved_sources": [
+        {
+          "id": 3,
+          "document_id": 10,
+          "title": "PHQ/GAD: фактическая выдержка из руководства авторов, страницы 6 и 8 оригинала",
+          "url": "https://www.phqscreeners.com/images/sites/g/files/g10016261/f/201412/instructions.pdf",
+          "source": "original_author",
+          "category": "publication",
+          "content_type": "factual_summary",
+          "page": 6,
+          "text": "Фактическое изложение раздела руководства авторов PHQ/GAD, страница 6 оригинала. PHQ-9: девять ответов оцениваются от 0 до 3; сумма от 0 до 27. Пороговые баллы 5, 10, 15 и 20 соответствуют лёгкому, умеренному, умеренно тяжёлому и тяжёлому уровням депрессивных симптомов. GAD-7: семь ответов оцениваются от 0 до 3; сумма от 0 до 21. Баллы 5, 10 и 15 обозначают лёгкий, умеренный и тяжёлый уровни тревожных симптомов. Для скрининга тревожных расстройств балл GAD-7 не менее 10 является поводом для дальнейшей оценки. Скрининговый результат сам по себе не устанавливает диагноз. Это изложение фактов, а не валидированный перевод опросника и не российская клиническая рекомендация.",
+          "score": 0.331138
+        },
+        {
+          "id": 112,
+          "document_id": 5,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "source": "pubmed",
+          "category": "publication",
+          "content_type": "open_full_text",
+          "page": null,
+          "text": "clustering tree showing microbial community similarity among groups. Each column represents the mean of each group. Data are presented as means ± SD (n = 3).\n\nAlleviation effects of TSPs on colitis-associated mental disorders. (A) Experimental timeline and setup for DSS-induced colitis model and behavioral analysis. (B) The open field test: (i) Schematic diagram of the experiment and action roadmap results of mice, statistical results of total distance traveled (ii) and percentage of resting time (iii). (C) The tail suspension test. Schematic diagram (i) and statistical chart showing the immobility time (ii). (D) The beam walk test. Schematic diagram (i) and crossing times of mice across the beam (ii). Data are presented as means ± SD (n = 3). Statistical significance was determined using one-way ANOVA followed by an LSD post-hoc test. * P < 0.05, ** P < 0.01, *** P < 0.001, **** P < 0.0001, and ***** P < 0.00001.",
+          "score": 0.321223
+        },
+        {
+          "id": 89,
+          "document_id": 5,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "source": "pubmed",
+          "category": "publication",
+          "content_type": "open_full_text",
+          "page": null,
+          "text": "athletic motivation 51 . Behavioral tests were conducted on days 7-8 to evaluate the effects of treatment on colitis-associated mental disorders ( Figure 7 A ). The open-field test trajectories ( Figure 7 B-i ) showed that the DSS + PBS group exhibited highly restricted movement. The DSS + TSPs group displayed trajectories resembling the health control group, with balanced movement between peripheral and center zones, preliminarily indicating restored motor function and reduced anxiety. Mice in the healthy control group traveled an average of approximately 900 cm ( Figure 7 B-ii ). In contrast, mice in the DSS + PBS group exhibited a dramatic reduction in total distance traveled, averaging less than 100 cm. DSS + TSPs group restored the total distance traveled to 934 cm, closely resembling health control group levels. Meanwhile, the longer resting time in the open field indicated higher levels of anxiety and less curiosity ( Figure 7 B-iii ). The DSS + TSPs group showed the greatest improvement, reflecting alleviated anxiety and restored curiosity.\n\nThe tail suspension test ( Figure 7 C-i ) assesses the depressive state by measuring the duration of immobility in mice. The DSS + PBS group showed a significant increase in immobility time to approximately 100 seconds, indicating severe behavioral despair ( Figure 7 C-ii ).",
+          "score": 0.314035
+        },
+        {
+          "id": 93,
+          "document_id": 5,
+          "title": "Aptamer-functionalized EGCG nanocarrier for neutrophil-targeted AKBA delivery promotes anxiety-related fracture healing.",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/42831169/",
+          "source": "pubmed",
+          "category": "publication",
+          "content_type": "open_full_text",
+          "page": null,
+          "text": "iating IBD-associated mental disorders 59 , 60 . Moreover, the therapeutic effects of TSPs are closely linked to EGCG's capacity to modulate the gut microbiota. Fecal microbiota transplantation (FMT) from EGCG-treated mice into colitis recipients significantly improved DAI scores, enriched SCFA-producing bacteria, and alleviated both intestinal and systemic inflammation 18 , 19 . Whereas sterile fecal filtrates failed to reproduce these effects. These findings suggest that the brain-related benefits observed in TSP-treated mice may be partly attributed to EGCG's role in modulating neuroimmune pathways via microbiota-derived signaling. TSPs enriched several SCFA-producing genera, and SCFAs like butyrate have been shown to strengthen tight junctions in endothelial cells while reducing microglial activation, thus fostering a more stable neuroimmune environment 17 , 19 . In addition, Lachnospiraceae has been associated with the production of myristic acid, a fatty acid shown to inhibit neuroinflammatory cascades and support synaptic health 47 . Given that the nucleus accumbens and hippocampus are particularly sensitive to inflammatory and metabolic cues 61 , the modulation of peripheral inflammation and gut-derived metabolites by TSPs may translate into behavioral improvements via enhanced neuroplasticity.",
+          "score": 0.291941
+        }
+      ]
+    }
+  }
+]

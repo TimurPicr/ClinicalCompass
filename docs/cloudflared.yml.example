@@ -1,0 +1,7 @@
+# Replace placeholders with values from cloudflared tunnel create.
+tunnel: REPLACE_TUNNEL_UUID
+credentials-file: /Users/REPLACE_USER/.cloudflared/REPLACE_TUNNEL_UUID.json
+ingress:
+  - hostname: compass.REPLACE_DOMAIN.ru
+    service: http://127.0.0.1:8010
+  - service: http_status:404

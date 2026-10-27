@@ -1,0 +1,8 @@
+.chat-card .chat-input-row textarea { flex: 1; min-width: 0; resize: none; }
+.chat-card .chat-input-row > input[hidden] { display: none; }
+.chat-card .chat-compose-hint { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 5px 16px; margin: 11px 8px 0; color: var(--muted); font-size: 12px; }
+.chat-card .connection-state { white-space: normal; }
+@media (max-width: 640px) {
+  .chat-card .chat-compose-hint { font-size: 10px; margin-left: 4px; margin-right: 4px; }
+  .chat-card .chat-compose-hint > span:first-child { max-width: 230px; }
+}

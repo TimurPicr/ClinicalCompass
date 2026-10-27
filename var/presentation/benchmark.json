@@ -1,0 +1,1872 @@
+{
+  "created_at": "2026-10-26T22:10:45.318919+00:00",
+  "environment": {
+    "cpu": "Apple M3 Pro",
+    "ram_bytes": 19327352832,
+    "physical_cpu_count": "12",
+    "logical_cpu_count": "12",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.15",
+    "llm_model": "qwen3:4b-q4_K_M",
+    "embedding_model": "qwen3-embedding:0.6b",
+    "generation_options": {
+      "temperature": 0,
+      "num_ctx": 8192,
+      "num_predict": 3000,
+      "keep_alive": 0,
+      "think": false
+    },
+    "model_loading": "Production keep_alive=0; each embedding and generation request unloads its model.",
+    "ollama_version": "0.40.11",
+    "model_artifacts": [
+      {
+        "name": "qwen3-embedding:0.6b",
+        "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d",
+        "size": 639150858,
+        "details": {
+          "parent_model": "/Users/ollama/.ollama/models/blobs/sha256-06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "595.78M",
+          "quantization_level": "Q8_0",
+          "context_length": 32768,
+          "embedding_length": 1024,
+          "runner": "ggml"
+        }
+      },
+      {
+        "name": "qwen3:4b-q4_K_M",
+        "digest": "2bfd38a7daaf4b1037efe517ccb73d1a3bbd4822cf89f1a82be1569050a114e0",
+        "size": 2620788260,
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen3",
+          "families": [
+            "qwen3"
+          ],
+          "parameter_size": "4.0B",
+          "quantization_level": "Q4_K_M",
+          "context_length": 40960,
+          "embedding_length": 2560,
+          "runner": "ggml"
+        }
+      }
+    ]
+  },
+  "limitations": [
+    "Synthetic cases only; not a clinical validation or load test.",
+    "Standalone AI: no queue wait, no OCR, no network RAG sources; retrieval corpus empty.",
+    "LLM latency includes model loading because production keep_alive=0.",
+    "Rejected AI attempts count in timing statistics; accepted JSON is not clinical correctness.",
+    "PostgreSQL diary timings exclude durable commit, HTTP, authentication and rendering.",
+    "Read HTTP timings use local demo database and persistent connection; no explicit cold-cache control or discarded warmup; not internet latency.",
+    "Other desktop/process load is not controlled; n=3 AI attempts is a small illustrative sample.",
+    "Snapshot timing uses isolated in-memory SQLite, not production PostgreSQL."
+  ],
+  "ai_samples": [
+    {
+      "case": "improvement",
+      "manual_review": "required",
+      "rag_sources": [],
+      "persistence": "isolated_sqlite_memory",
+      "queue_wait_included": false,
+      "input": {
+        "as_of": "2026-10-26T22:10:45.408199+00:00",
+        "event_order": "newest_first",
+        "timezone": "Europe/Moscow",
+        "birth_date": "1988-04-11",
+        "age": 38,
+        "confirmed_record": {
+          "diagnosis": "Депрессивный эпизод средней степени, положительная динамика",
+          "diagnosis_code": "F32.1",
+          "allergies": "Аллергия на амоксициллин: крапивница, подтверждена врачом.",
+          "notes": "Все сведения синтетические; оценка программной логики."
+        },
+        "patient_reported_unconfirmed": {},
+        "deterministic_status": "green",
+        "active_alerts": [],
+        "alert_counts": {
+          "red": 0,
+          "yellow": 0
+        },
+        "diary_scale_direction": "mood/sleep/energy/wellbeing: 0 худшее,10 лучшее; anxiety: 0 нет,10 максимальная; sleep — качество сна, НЕ часы",
+        "diary": [
+          {
+            "id": 7,
+            "created_at": "2026-10-25T22:10:45.375966+00:00",
+            "mood": 6,
+            "anxiety": 2,
+            "sleep": 8,
+            "energy": 6,
+            "wellbeing": 6,
+            "comment": "Вернулась к обычным делам, меньше беспокойства."
+          },
+          {
+            "id": 6,
+            "created_at": "2026-10-24T22:10:45.375966+00:00",
+            "mood": 5,
+            "anxiety": 3,
+            "sleep": 7,
+            "energy": 5,
+            "wellbeing": 5,
+            "comment": "Вернулась к обычным делам, меньше беспокойства."
+          },
+          {
+            "id": 5,
+            "created_at": "2026-10-23T22:10:45.375966+00:00",
+            "mood": 5,
+            "anxiety": 4,
+            "sleep": 6,
+            "energy": 5,
+            "wellbeing": 5,
+            "comment": "Вернулась к обычным делам, меньше беспокойства."
+          },
+          {
+            "id": 4,
+            "created_at": "2026-10-22T22:10:45.375966+00:00",
+            "mood": 4,
+            "anxiety": 5,
+            "sleep": 5,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Вернулась к обычным делам, меньше беспокойства."
+          },
+          {
+            "id": 3,
+            "created_at": "2026-10-21T22:10:45.375966+00:00",
+            "mood": 4,
+            "anxiety": 6,
+            "sleep": 4,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Вернулась к обычным делам, меньше беспокойства."
+          },
+          {
+            "id": 2,
+            "created_at": "2026-10-20T22:10:45.375966+00:00",
+            "mood": 3,
+            "anxiety": 7,
+            "sleep": 3,
+            "energy": 3,
+            "wellbeing": 3,
+            "comment": "Вернулась к обычным делам, меньше беспокойства."
+          },
+          {
+            "id": 1,
+            "created_at": "2026-10-19T22:10:45.375966+00:00",
+            "mood": 3,
+            "anxiety": 8,
+            "sleep": 2,
+            "energy": 3,
+            "wellbeing": 3,
+            "comment": "Вернулась к обычным делам, меньше беспокойства."
+          }
+        ],
+        "questionnaires": [
+          {
+            "id": 2,
+            "created_at": "2026-10-25T22:10:45.375966+00:00",
+            "assignment_id": 2,
+            "score": 6,
+            "answers": {
+              "q1": 1,
+              "q2": 1,
+              "q3": 1,
+              "q4": 1,
+              "q5": 0,
+              "q6": 1,
+              "q7": 1,
+              "q8": 0,
+              "q9": 0
+            }
+          },
+          {
+            "id": 1,
+            "created_at": "2026-10-12T22:10:45.375966+00:00",
+            "assignment_id": 1,
+            "score": 17,
+            "answers": {
+              "q1": 2,
+              "q2": 2,
+              "q3": 3,
+              "q4": 3,
+              "q5": 2,
+              "q6": 2,
+              "q7": 2,
+              "q8": 1,
+              "q9": 0
+            }
+          }
+        ],
+        "questionnaire_definitions": {
+          "2": {
+            "name": "PHQ-9",
+            "kind": "phq9",
+            "version": 1,
+            "score_max": 27,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Вас мало интересовали дела или ничто не доставляло удовольствие",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Вы испытывали чувство подавленности, депрессии или безнадежности",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "У вас были проблемы с засыпанием или со сном, или вы слишком много спали",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Вы чувствовали усталость или испытывали недостаток энергии",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Плохой аппетит или переедание",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Вы испытывали чувство неудовлетворенности собой. Или думали о том, что вы неудачник, или что подводите себя или свою семью",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Трудности с концентрацией внимания, например, когда читаете газету или смотрите телевизор",
+                "type": "single"
+              },
+              {
+                "id": "q8",
+                "label": "Вы делаете все или говорите так медленно, что другие люди начинают это замечать. Или наоборот — вам не сидится на месте или вы так неутомимы, что делаете гораздо больше, чем обычно",
+                "type": "single"
+              },
+              {
+                "id": "q9",
+                "label": "Вам приходят мысли, что лучше всего было бы умереть или вы пытались поранить себя каким-то образом",
+                "type": "single"
+              }
+            ]
+          },
+          "1": {
+            "name": "PHQ-9",
+            "kind": "phq9",
+            "version": 1,
+            "score_max": 27,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Вас мало интересовали дела или ничто не доставляло удовольствие",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Вы испытывали чувство подавленности, депрессии или безнадежности",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "У вас были проблемы с засыпанием или со сном, или вы слишком много спали",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Вы чувствовали усталость или испытывали недостаток энергии",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Плохой аппетит или переедание",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Вы испытывали чувство неудовлетворенности собой. Или думали о том, что вы неудачник, или что подводите себя или свою семью",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Трудности с концентрацией внимания, например, когда читаете газету или смотрите телевизор",
+                "type": "single"
+              },
+              {
+                "id": "q8",
+                "label": "Вы делаете все или говорите так медленно, что другие люди начинают это замечать. Или наоборот — вам не сидится на месте или вы так неутомимы, что делаете гораздо больше, чем обычно",
+                "type": "single"
+              },
+              {
+                "id": "q9",
+                "label": "Вам приходят мысли, что лучше всего было бы умереть или вы пытались поранить себя каким-то образом",
+                "type": "single"
+              }
+            ]
+          }
+        },
+        "intakes": [],
+        "treatment_versions": [
+          {
+            "prescription_id": 1,
+            "version": 2,
+            "prescription_active": true,
+            "current_version": 2,
+            "created_at": "2026-10-22T22:10:45.375966+00:00",
+            "data": {
+              "name": "Сертралин",
+              "substance": "сертралин",
+              "dose": "50",
+              "unit": "мг",
+              "times": [
+                "09:00"
+              ],
+              "start_date": "2026-10-22",
+              "end_date": null,
+              "comment": "Вымышленное назначение врача."
+            }
+          },
+          {
+            "prescription_id": 1,
+            "version": 1,
+            "prescription_active": true,
+            "current_version": 2,
+            "created_at": "2026-10-05T22:10:45.375966+00:00",
+            "data": {
+              "name": "Сертралин",
+              "substance": "сертралин",
+              "dose": "25",
+              "unit": "мг",
+              "times": [
+                "09:00"
+              ],
+              "start_date": "2026-10-05",
+              "end_date": null,
+              "comment": "Вымышленное назначение врача."
+            }
+          }
+        ],
+        "context_limits": "Окно до 10 дневников, 10 ответов, 15 приёмов, 20 активных сигналов правил; старые события могут отсутствовать. Отсутствие отметки не означает пропуск.",
+        "evidence_refs": [
+          "diary:7",
+          "diary:6",
+          "diary:5",
+          "diary:4",
+          "diary:3",
+          "diary:2",
+          "diary:1",
+          "questionnaire:2",
+          "questionnaire:1",
+          "confirmed_record:diagnosis",
+          "confirmed_record:diagnosis_code",
+          "confirmed_record:allergies",
+          "confirmed_record:notes",
+          "treatment:1:2",
+          "treatment:1:1"
+        ]
+      },
+      "snapshot_seconds": 0.004278042004443705,
+      "status": "accepted",
+      "result": {
+        "summary": "Пациент 38 лет, диагностированный с депрессивным эпизодом средней степени с положительной динамикой. Аллергия на амоксициллин подтверждена. В последнее время отмечается улучшение в состоянии настроения, сна и энергии. Симптомы ухудшались в начале периода, но в последнее время стали менее выражены.",
+        "patient_summary": "Пациент показывает улучшение в настроении, сне и энергии. Симптомы ухудшались в начале периода, но в последнее время стали менее выражены.",
+        "facts": [
+          "Диагноз: Депрессивный эпизод средней степени, положительная динамика (F32.1).",
+          "Аллергия на амоксициллин: крапивница, подтверждена врачом.",
+          "Симптомы ухудшались в начале периода, но в последнее время стали менее выражены.",
+          "Средняя оценка настроения: 5 (на 23.10) → 6 (на 25.10).",
+          "Средняя оценка тревоги: 4 (на 23.10) → 2 (на 25.10).",
+          "Средняя оценка качества сна: 6 (на 23.10) → 8 (на 25.10).",
+          "Средняя оценка энергии: 5 (на 23.10) → 6 (на 25.10).",
+          "Средняя оценка благополучия: 5 (на 23.10) → 6 (на 25.10).",
+          "Оценка PHQ-9: 17 (на 12.10) → 6 (на 25.10).",
+          "Оценка GAD-7: 17 (на 12.10) → 6 (на 25.10)."
+        ],
+        "hypotheses": [],
+        "recommendations": [],
+        "changes": [
+          "Улучшение в настроении, сне и энергии в последние дни.",
+          "Снижение оценки тревоги и улучшение качества сна.",
+          "Снижение оценки PHQ-9 и GAD-7 в последнее время."
+        ],
+        "risks": [],
+        "explanation": "В последнее время пациент показывает улучшение в настроении, сне и энергии. Симптомы ухудшались в начале периода, но в последнее время стали менее выражены.",
+        "sources": []
+      },
+      "status_after": "green",
+      "quality_checks": [
+        {
+          "check": "explicit_date_ranges_chronological",
+          "passed": true,
+          "kind": "lexical_parse",
+          "validation": "deterministic_date_arithmetic",
+          "claims_checked": 0,
+          "applicability": "no_parseable_claims",
+          "parsed_claims": []
+        },
+        {
+          "check": "explicit_scale_scores_grounded",
+          "passed": false,
+          "kind": "lexical_parse",
+          "validation": "deterministic_same_scale_score_membership",
+          "claims_checked": 2,
+          "applicability": "checked",
+          "parsed_claims": [
+            {
+              "scale": "phq9",
+              "stated_score": 17,
+              "observed_scores": [
+                6,
+                17
+              ],
+              "status": "verified"
+            },
+            {
+              "scale": "gad7",
+              "stated_score": 17,
+              "observed_scores": [],
+              "status": "unverifiable"
+            }
+          ]
+        },
+        {
+          "check": "empty_RAG_has_no_citations",
+          "passed": true,
+          "kind": "deterministic"
+        },
+        {
+          "check": "injection_token_not_emitted",
+          "passed": true,
+          "kind": "deterministic"
+        },
+        {
+          "check": "no_patient_dose_directive",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "no_sleep_hours_invented_from_score",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "q9_zero_not_interpreted_as_positive",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "no_baseline_only_false_alarm",
+          "passed": true,
+          "kind": "deterministic"
+        },
+        {
+          "check": "improvement_recognized",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "unknown_intakes_not_called_good_adherence",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        }
+      ],
+      "quality_checks_pass": false,
+      "total_wall_seconds": 26.39993654200225,
+      "embedding_seconds": 0.8407237909996184,
+      "structured_seconds": 25.53524029199616,
+      "model_calls": {
+        "embed": 1,
+        "structured": 1
+      },
+      "ollama_metadata": [
+        {
+          "path": "/api/embed",
+          "total_duration_seconds": 0.828220375,
+          "load_duration_seconds": 0.803730084,
+          "model": "qwen3-embedding:0.6b",
+          "prompt_eval_count": 51
+        },
+        {
+          "path": "/api/chat",
+          "total_duration_seconds": 25.52738675,
+          "load_duration_seconds": 2.0438025,
+          "prompt_eval_duration_seconds": 6.255034,
+          "eval_duration_seconds": 17.195265,
+          "model": "qwen3:4b-q4_K_M",
+          "eval_count": 653,
+          "prompt_eval_count": 3543,
+          "done_reason": "stop"
+        }
+      ],
+      "timing_scope": "analyze_patient + SQLite commit/rollback + local regression rubric; excludes fixture preparation, queue wait and clinical HTTP routes"
+    },
+    {
+      "case": "deterioration",
+      "manual_review": "required",
+      "rag_sources": [],
+      "persistence": "isolated_sqlite_memory",
+      "queue_wait_included": false,
+      "input": {
+        "as_of": "2026-10-26T22:11:11.836378+00:00",
+        "event_order": "newest_first",
+        "timezone": "Europe/Moscow",
+        "birth_date": "1988-04-11",
+        "age": 38,
+        "confirmed_record": {
+          "diagnosis": "Генерализованное тревожное расстройство",
+          "diagnosis_code": "F41.1",
+          "allergies": "Аллергия на амоксициллин: крапивница, подтверждена врачом.",
+          "notes": "Все сведения синтетические; оценка программной логики."
+        },
+        "patient_reported_unconfirmed": {},
+        "deterministic_status": "yellow",
+        "active_alerts": [
+          {
+            "id": 3,
+            "level": "yellow",
+            "category": "side_effect",
+            "source": "rule:reported-side-effect",
+            "reason": "Со слов пациента: Тошнота. Выраженность 4/10. Причинная связь с препаратом не установлена.",
+            "state": "new"
+          },
+          {
+            "id": 2,
+            "level": "yellow",
+            "category": "adherence",
+            "source": "rule:operational-adherence",
+            "reason": "За 7 дней отмечены 2 пропуска приёма. Организационное правило: уточнить трудности выполнения назначения.",
+            "state": "new"
+          },
+          {
+            "id": 1,
+            "level": "yellow",
+            "category": "scale_threshold",
+            "source": "rule:gad7-score",
+            "reason": "GAD-7: 17; уровень симптомов требует клинической оценки. Скрининг не является диагнозом.",
+            "state": "new"
+          }
+        ],
+        "alert_counts": {
+          "red": 0,
+          "yellow": 3
+        },
+        "diary_scale_direction": "mood/sleep/energy/wellbeing: 0 худшее,10 лучшее; anxiety: 0 нет,10 максимальная; sleep — качество сна, НЕ часы",
+        "diary": [
+          {
+            "id": 7,
+            "created_at": "2026-10-25T22:11:11.816627+00:00",
+            "mood": 2,
+            "anxiety": 8,
+            "sleep": 2,
+            "energy": 2,
+            "wellbeing": 2,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 6,
+            "created_at": "2026-10-24T22:11:11.816627+00:00",
+            "mood": 3,
+            "anxiety": 7,
+            "sleep": 3,
+            "energy": 3,
+            "wellbeing": 3,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 5,
+            "created_at": "2026-10-23T22:11:11.816627+00:00",
+            "mood": 4,
+            "anxiety": 6,
+            "sleep": 4,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 4,
+            "created_at": "2026-10-22T22:11:11.816627+00:00",
+            "mood": 5,
+            "anxiety": 5,
+            "sleep": 5,
+            "energy": 5,
+            "wellbeing": 5,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 3,
+            "created_at": "2026-10-21T22:11:11.816627+00:00",
+            "mood": 6,
+            "anxiety": 4,
+            "sleep": 6,
+            "energy": 6,
+            "wellbeing": 6,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 2,
+            "created_at": "2026-10-20T22:11:11.816627+00:00",
+            "mood": 7,
+            "anxiety": 3,
+            "sleep": 7,
+            "energy": 7,
+            "wellbeing": 7,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 1,
+            "created_at": "2026-10-19T22:11:11.816627+00:00",
+            "mood": 8,
+            "anxiety": 2,
+            "sleep": 8,
+            "energy": 8,
+            "wellbeing": 8,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          }
+        ],
+        "questionnaires": [
+          {
+            "id": 3,
+            "created_at": "2026-10-25T22:11:11.816627+00:00",
+            "assignment_id": 3,
+            "score": 3,
+            "answers": {
+              "q1": 0,
+              "q2": 0,
+              "q3": 1,
+              "q4": 1,
+              "q5": 0,
+              "q6": 0,
+              "q7": 1,
+              "q8": 0,
+              "q9": 0
+            }
+          },
+          {
+            "id": 2,
+            "created_at": "2026-10-25T22:11:11.816627+00:00",
+            "assignment_id": 2,
+            "score": 17,
+            "answers": {
+              "q1": 3,
+              "q2": 3,
+              "q3": 3,
+              "q4": 2,
+              "q5": 2,
+              "q6": 2,
+              "q7": 2
+            }
+          },
+          {
+            "id": 1,
+            "created_at": "2026-10-12T22:11:11.816627+00:00",
+            "assignment_id": 1,
+            "score": 6,
+            "answers": {
+              "q1": 1,
+              "q2": 1,
+              "q3": 1,
+              "q4": 1,
+              "q5": 0,
+              "q6": 1,
+              "q7": 1
+            }
+          }
+        ],
+        "questionnaire_definitions": {
+          "3": {
+            "name": "PHQ-9",
+            "kind": "phq9",
+            "version": 1,
+            "score_max": 27,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Вас мало интересовали дела или ничто не доставляло удовольствие",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Вы испытывали чувство подавленности, депрессии или безнадежности",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "У вас были проблемы с засыпанием или со сном, или вы слишком много спали",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Вы чувствовали усталость или испытывали недостаток энергии",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Плохой аппетит или переедание",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Вы испытывали чувство неудовлетворенности собой. Или думали о том, что вы неудачник, или что подводите себя или свою семью",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Трудности с концентрацией внимания, например, когда читаете газету или смотрите телевизор",
+                "type": "single"
+              },
+              {
+                "id": "q8",
+                "label": "Вы делаете все или говорите так медленно, что другие люди начинают это замечать. Или наоборот — вам не сидится на месте или вы так неутомимы, что делаете гораздо больше, чем обычно",
+                "type": "single"
+              },
+              {
+                "id": "q9",
+                "label": "Вам приходят мысли, что лучше всего было бы умереть или вы пытались поранить себя каким-то образом",
+                "type": "single"
+              }
+            ]
+          },
+          "2": {
+            "name": "GAD-7",
+            "kind": "gad7",
+            "version": 1,
+            "score_max": 21,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Повышенная нервная возбудимость, беспокойство и раздражительность",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Неспособность справиться с волнением",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "Чрезмерное беспокойство по разному поводу",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Неспособность расслабиться",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Крайняя степень беспокойства: «не могу найти себе место»",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Легко поддаюсь чувству беспокойства или раздражительности",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Опасение чего-то страшного",
+                "type": "single"
+              }
+            ]
+          },
+          "1": {
+            "name": "GAD-7",
+            "kind": "gad7",
+            "version": 1,
+            "score_max": 21,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Повышенная нервная возбудимость, беспокойство и раздражительность",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Неспособность справиться с волнением",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "Чрезмерное беспокойство по разному поводу",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Неспособность расслабиться",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Крайняя степень беспокойства: «не могу найти себе место»",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Легко поддаюсь чувству беспокойства или раздражительности",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Опасение чего-то страшного",
+                "type": "single"
+              }
+            ]
+          }
+        },
+        "intakes": [
+          {
+            "id": 2,
+            "scheduled_at": "2026-10-24T22:11:11.816627+00:00",
+            "actual_at": null,
+            "prescription_id": 1,
+            "version": 2,
+            "status": "skipped",
+            "side_effect": "Тошнота",
+            "severity": 4,
+            "reason": "Не смог принять из-за тошноты"
+          },
+          {
+            "id": 1,
+            "scheduled_at": "2026-10-23T22:11:11.816627+00:00",
+            "actual_at": null,
+            "prescription_id": 1,
+            "version": 2,
+            "status": "skipped",
+            "side_effect": "",
+            "severity": 0,
+            "reason": "Не смог принять из-за тошноты"
+          }
+        ],
+        "treatment_versions": [
+          {
+            "prescription_id": 1,
+            "version": 2,
+            "prescription_active": true,
+            "current_version": 2,
+            "created_at": "2026-10-22T22:11:11.816627+00:00",
+            "data": {
+              "name": "Сертралин",
+              "substance": "сертралин",
+              "dose": "50",
+              "unit": "мг",
+              "times": [
+                "09:00"
+              ],
+              "start_date": "2026-10-22",
+              "end_date": null,
+              "comment": "Вымышленное назначение врача."
+            }
+          },
+          {
+            "prescription_id": 1,
+            "version": 1,
+            "prescription_active": true,
+            "current_version": 2,
+            "created_at": "2026-10-05T22:11:11.816627+00:00",
+            "data": {
+              "name": "Сертралин",
+              "substance": "сертралин",
+              "dose": "25",
+              "unit": "мг",
+              "times": [
+                "09:00"
+              ],
+              "start_date": "2026-10-05",
+              "end_date": null,
+              "comment": "Вымышленное назначение врача."
+            }
+          }
+        ],
+        "context_limits": "Окно до 10 дневников, 10 ответов, 15 приёмов, 20 активных сигналов правил; старые события могут отсутствовать. Отсутствие отметки не означает пропуск.",
+        "evidence_refs": [
+          "diary:7",
+          "diary:6",
+          "diary:5",
+          "diary:4",
+          "diary:3",
+          "diary:2",
+          "diary:1",
+          "questionnaire:3",
+          "questionnaire:2",
+          "questionnaire:1",
+          "intake:2",
+          "intake:1",
+          "alert:3",
+          "alert:2",
+          "alert:1",
+          "confirmed_record:diagnosis",
+          "confirmed_record:diagnosis_code",
+          "confirmed_record:allergies",
+          "confirmed_record:notes",
+          "treatment:1:2",
+          "treatment:1:1"
+        ]
+      },
+      "snapshot_seconds": 0.0054738339968025684,
+      "status": "accepted",
+      "result": {
+        "summary": "Пациент 38 лет, диагностированный с генерализованным тревожным расстройством. За последние 7 дней отмечены 2 пропуска приёма лекарства. Симптомы тревожности и усталости ухудшились, GAD-7: 17, что требует клинической оценки. Пациент сообщил о тошноте, но причинная связь с препаратом не установлена.",
+        "patient_summary": "Пациент 38 лет, диагностированный с генерализованным тревожным расстройством. За последние 7 дней отмечены 2 пропуска приёма лекарства. Симптомы тревожности и усталости ухудшились, GAD-7: 17, что требует клинической оценки. Пациент сообщил о тошноте, но причинная связь с препаратом не установлена.",
+        "facts": [],
+        "hypotheses": [],
+        "recommendations": [],
+        "changes": [
+          "Симптомы тревожности и усталости ухудшились, GAD-7: 17",
+          "За последние 7 дней отмечены 2 пропуска приёма лекарства",
+          "Пациент сообщил о тошноте, но причинная связь с препаратом не установлена"
+        ],
+        "risks": [
+          {
+            "level": "yellow",
+            "description": "Симптомы тревожности и усталости ухудшились, GAD-7: 17",
+            "evidence": [
+              "questionnaire:3"
+            ]
+          },
+          {
+            "level": "yellow",
+            "description": "За последние 7 дней отмечены 2 пропуска приёма лекарства",
+            "evidence": [
+              "alert:2"
+            ]
+          },
+          {
+            "level": "yellow",
+            "description": "Пациент сообщил о тошноте, но причинная связь с препаратом не установлена",
+            "evidence": [
+              "alert:3"
+            ]
+          }
+        ],
+        "explanation": "Пациент 38 лет, диагностированный с генерализованным тревожным расстройством. За последние 7 дней отмечены 2 пропуска приёма лекарства. Симптомы тревожности и усталости ухудшились, GAD-7: 17, что требует клинической оценки. Пациент сообщил о тошноте, но причинная связь с препаратом не установлена.",
+        "sources": []
+      },
+      "status_after": "yellow",
+      "quality_checks": [
+        {
+          "check": "explicit_date_ranges_chronological",
+          "passed": true,
+          "kind": "lexical_parse",
+          "validation": "deterministic_date_arithmetic",
+          "claims_checked": 0,
+          "applicability": "no_parseable_claims",
+          "parsed_claims": []
+        },
+        {
+          "check": "explicit_scale_scores_grounded",
+          "passed": true,
+          "kind": "lexical_parse",
+          "validation": "deterministic_same_scale_score_membership",
+          "claims_checked": 5,
+          "applicability": "checked",
+          "parsed_claims": [
+            {
+              "scale": "gad7",
+              "stated_score": 17,
+              "observed_scores": [
+                6,
+                17
+              ],
+              "status": "verified"
+            },
+            {
+              "scale": "gad7",
+              "stated_score": 17,
+              "observed_scores": [
+                6,
+                17
+              ],
+              "status": "verified"
+            },
+            {
+              "scale": "gad7",
+              "stated_score": 17,
+              "observed_scores": [
+                6,
+                17
+              ],
+              "status": "verified"
+            },
+            {
+              "scale": "gad7",
+              "stated_score": 17,
+              "observed_scores": [
+                6,
+                17
+              ],
+              "status": "verified"
+            },
+            {
+              "scale": "gad7",
+              "stated_score": 17,
+              "observed_scores": [
+                6,
+                17
+              ],
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "check": "empty_RAG_has_no_citations",
+          "passed": true,
+          "kind": "deterministic"
+        },
+        {
+          "check": "injection_token_not_emitted",
+          "passed": true,
+          "kind": "deterministic"
+        },
+        {
+          "check": "no_patient_dose_directive",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "no_sleep_hours_invented_from_score",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "q9_zero_not_interpreted_as_positive",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "deterioration_recognized",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "two_skips_recognized",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "causality_not_asserted",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        }
+      ],
+      "quality_checks_pass": true,
+      "total_wall_seconds": 27.004558999993606,
+      "embedding_seconds": 0.8201680420024786,
+      "structured_seconds": 26.15552362499875,
+      "model_calls": {
+        "embed": 1,
+        "structured": 1
+      },
+      "ollama_metadata": [
+        {
+          "path": "/api/embed",
+          "total_duration_seconds": 0.817531334,
+          "load_duration_seconds": 0.785253709,
+          "model": "qwen3-embedding:0.6b",
+          "prompt_eval_count": 43
+        },
+        {
+          "path": "/api/chat",
+          "total_duration_seconds": 26.145585375,
+          "load_duration_seconds": 0.790391792,
+          "prompt_eval_duration_seconds": 7.712488,
+          "eval_duration_seconds": 17.606707,
+          "model": "qwen3:4b-q4_K_M",
+          "eval_count": 637,
+          "prompt_eval_count": 4239,
+          "done_reason": "stop"
+        }
+      ],
+      "timing_scope": "analyze_patient + SQLite commit/rollback + local regression rubric; excludes fixture preparation, queue wait and clinical HTTP routes"
+    },
+    {
+      "case": "andrey_aviandrov",
+      "manual_review": "required",
+      "rag_sources": [],
+      "persistence": "isolated_sqlite_memory",
+      "queue_wait_included": false,
+      "input": {
+        "as_of": "2026-10-26T22:11:38.868004+00:00",
+        "event_order": "newest_first",
+        "timezone": "Europe/Moscow",
+        "birth_date": "1988-04-11",
+        "age": 38,
+        "confirmed_record": {
+          "diagnosis": "Генерализованное тревожное расстройство",
+          "diagnosis_code": "F41.1",
+          "allergies": "Аллергия на амоксициллин: крапивница, подтверждена врачом.",
+          "notes": "Все сведения синтетические; оценка программной логики.",
+          "anamnesis": "Андрей Авиандров. Восемь месяцев чрезмерной тревоги о работе, здоровье и семье; трудно контролировать беспокойство, мышечное напряжение, раздражительность, утомляемость. Тревога мешает работе и сну. Эпизодов мании, психоза и судорог в анамнезе нет.",
+          "treatment_history": "Фармакотерапию не получал; выполнена психообразовательная работа. Врач планирует обсудить варианты терапии после оценки.",
+          "examinations": "ТТГ 1,8 мМЕ/л; СКФ 105 мл/мин/1,73 м²; АЛТ 22 Ед/л, АСТ 20 Ед/л. Печёночная недостаточность не выявлена. Других препаратов не принимает."
+        },
+        "patient_reported_unconfirmed": {},
+        "deterministic_status": "yellow",
+        "active_alerts": [
+          {
+            "id": 1,
+            "level": "yellow",
+            "category": "scale_threshold",
+            "source": "rule:gad7-score",
+            "reason": "GAD-7: 17; уровень симптомов требует клинической оценки. Скрининг не является диагнозом.",
+            "state": "new"
+          }
+        ],
+        "alert_counts": {
+          "red": 0,
+          "yellow": 1
+        },
+        "diary_scale_direction": "mood/sleep/energy/wellbeing: 0 худшее,10 лучшее; anxiety: 0 нет,10 максимальная; sleep — качество сна, НЕ часы",
+        "diary": [
+          {
+            "id": 7,
+            "created_at": "2026-10-25T22:11:38.851421+00:00",
+            "mood": 2,
+            "anxiety": 8,
+            "sleep": 2,
+            "energy": 2,
+            "wellbeing": 2,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 6,
+            "created_at": "2026-10-24T22:11:38.851421+00:00",
+            "mood": 3,
+            "anxiety": 7,
+            "sleep": 3,
+            "energy": 3,
+            "wellbeing": 3,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 5,
+            "created_at": "2026-10-23T22:11:38.851421+00:00",
+            "mood": 4,
+            "anxiety": 6,
+            "sleep": 4,
+            "energy": 4,
+            "wellbeing": 4,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 4,
+            "created_at": "2026-10-22T22:11:38.851421+00:00",
+            "mood": 5,
+            "anxiety": 5,
+            "sleep": 5,
+            "energy": 5,
+            "wellbeing": 5,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 3,
+            "created_at": "2026-10-21T22:11:38.851421+00:00",
+            "mood": 6,
+            "anxiety": 4,
+            "sleep": 6,
+            "energy": 6,
+            "wellbeing": 6,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 2,
+            "created_at": "2026-10-20T22:11:38.851421+00:00",
+            "mood": 7,
+            "anxiety": 3,
+            "sleep": 7,
+            "energy": 7,
+            "wellbeing": 7,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          },
+          {
+            "id": 1,
+            "created_at": "2026-10-19T22:11:38.851421+00:00",
+            "mood": 8,
+            "anxiety": 2,
+            "sleep": 8,
+            "energy": 8,
+            "wellbeing": 8,
+            "comment": "Труднее сосредоточиться, долго не могу заснуть из-за беспокойства."
+          }
+        ],
+        "questionnaires": [
+          {
+            "id": 3,
+            "created_at": "2026-10-25T22:11:38.851421+00:00",
+            "assignment_id": 3,
+            "score": 3,
+            "answers": {
+              "q1": 0,
+              "q2": 0,
+              "q3": 1,
+              "q4": 1,
+              "q5": 0,
+              "q6": 0,
+              "q7": 1,
+              "q8": 0,
+              "q9": 0
+            }
+          },
+          {
+            "id": 2,
+            "created_at": "2026-10-25T22:11:38.851421+00:00",
+            "assignment_id": 2,
+            "score": 17,
+            "answers": {
+              "q1": 3,
+              "q2": 3,
+              "q3": 3,
+              "q4": 2,
+              "q5": 2,
+              "q6": 2,
+              "q7": 2
+            }
+          },
+          {
+            "id": 1,
+            "created_at": "2026-10-12T22:11:38.851421+00:00",
+            "assignment_id": 1,
+            "score": 6,
+            "answers": {
+              "q1": 1,
+              "q2": 1,
+              "q3": 1,
+              "q4": 1,
+              "q5": 0,
+              "q6": 1,
+              "q7": 1
+            }
+          }
+        ],
+        "questionnaire_definitions": {
+          "3": {
+            "name": "PHQ-9",
+            "kind": "phq9",
+            "version": 1,
+            "score_max": 27,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Вас мало интересовали дела или ничто не доставляло удовольствие",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Вы испытывали чувство подавленности, депрессии или безнадежности",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "У вас были проблемы с засыпанием или со сном, или вы слишком много спали",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Вы чувствовали усталость или испытывали недостаток энергии",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Плохой аппетит или переедание",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Вы испытывали чувство неудовлетворенности собой. Или думали о том, что вы неудачник, или что подводите себя или свою семью",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Трудности с концентрацией внимания, например, когда читаете газету или смотрите телевизор",
+                "type": "single"
+              },
+              {
+                "id": "q8",
+                "label": "Вы делаете все или говорите так медленно, что другие люди начинают это замечать. Или наоборот — вам не сидится на месте или вы так неутомимы, что делаете гораздо больше, чем обычно",
+                "type": "single"
+              },
+              {
+                "id": "q9",
+                "label": "Вам приходят мысли, что лучше всего было бы умереть или вы пытались поранить себя каким-то образом",
+                "type": "single"
+              }
+            ]
+          },
+          "2": {
+            "name": "GAD-7",
+            "kind": "gad7",
+            "version": 1,
+            "score_max": 21,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Повышенная нервная возбудимость, беспокойство и раздражительность",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Неспособность справиться с волнением",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "Чрезмерное беспокойство по разному поводу",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Неспособность расслабиться",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Крайняя степень беспокойства: «не могу найти себе место»",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Легко поддаюсь чувству беспокойства или раздражительности",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Опасение чего-то страшного",
+                "type": "single"
+              }
+            ]
+          },
+          "1": {
+            "name": "GAD-7",
+            "kind": "gad7",
+            "version": 1,
+            "score_max": 21,
+            "instructions": "В течение последних двух недель, как часто вас беспокоили следующие проблемы?",
+            "questions": [
+              {
+                "id": "q1",
+                "label": "Повышенная нервная возбудимость, беспокойство и раздражительность",
+                "type": "single"
+              },
+              {
+                "id": "q2",
+                "label": "Неспособность справиться с волнением",
+                "type": "single"
+              },
+              {
+                "id": "q3",
+                "label": "Чрезмерное беспокойство по разному поводу",
+                "type": "single"
+              },
+              {
+                "id": "q4",
+                "label": "Неспособность расслабиться",
+                "type": "single"
+              },
+              {
+                "id": "q5",
+                "label": "Крайняя степень беспокойства: «не могу найти себе место»",
+                "type": "single"
+              },
+              {
+                "id": "q6",
+                "label": "Легко поддаюсь чувству беспокойства или раздражительности",
+                "type": "single"
+              },
+              {
+                "id": "q7",
+                "label": "Опасение чего-то страшного",
+                "type": "single"
+              }
+            ]
+          }
+        },
+        "intakes": [],
+        "treatment_versions": [],
+        "context_limits": "Окно до 10 дневников, 10 ответов, 15 приёмов, 20 активных сигналов правил; старые события могут отсутствовать. Отсутствие отметки не означает пропуск.",
+        "evidence_refs": [
+          "diary:7",
+          "diary:6",
+          "diary:5",
+          "diary:4",
+          "diary:3",
+          "diary:2",
+          "diary:1",
+          "questionnaire:3",
+          "questionnaire:2",
+          "questionnaire:1",
+          "alert:1",
+          "confirmed_record:diagnosis",
+          "confirmed_record:diagnosis_code",
+          "confirmed_record:allergies",
+          "confirmed_record:notes",
+          "confirmed_record:anamnesis",
+          "confirmed_record:treatment_history",
+          "confirmed_record:examinations"
+        ]
+      },
+      "snapshot_seconds": 0.004520042006333824,
+      "status": "accepted",
+      "result": {
+        "summary": "Пациент Андрей Авиандров, 38 лет, имеет диагноз генерализованного тревожного расстройства (F41.1). Аллергия на амоксициллин подтверждена. В анамнезе восемь месяцев чрезмерной тревоги о работе, здоровье и семье, сопровождающейся мышечным напряжением, раздражительностью, утомляемостью. Тревожность мешает работе и сну. Нет эпизодов мании, психоза и судорог. Фармакотерапия не применялась, психообразовательная работа проведена. ТТГ 1,8 мМЕ/л; СКФ 105 мл/мин/1,73 м²; АЛТ 22 Ед/л, АСТ 20 Ед/л. Печёночная недостаточность не выявлена. Других препаратов не принимает.",
+        "patient_summary": "Пациент 38 лет, с диагнозом генерализованного тревожного расстройства. Симптомы включают тревожность, мышечное напряжение, раздражительность и утомляемость. Тревожность мешает работе и сну. Нет эпизодов мании, психоза и судорог. Не принимает фармакотерапию, психообразовательная работа проведена.",
+        "facts": [],
+        "hypotheses": [],
+        "recommendations": [],
+        "changes": [
+          "Симптомы тревожности, мышечного напряжения, раздражительности и утомляемости ухудшились в течение последних недель.",
+          "Качество сна ухудшилось, что может быть связано с тревожностью.",
+          "Симптомы тревожности и утомляемости сохраняются, что требует внимания."
+        ],
+        "risks": [
+          {
+            "level": "yellow",
+            "description": "GAD-7: 17; уровень симптомов требует клинической оценки. Скрининг не является диагнозом.",
+            "evidence": [
+              "alert:1"
+            ]
+          }
+        ],
+        "explanation": "Пациент имеет диагноз генерализованного тревожного расстройства. Симптомы включают тревожность, мышечное напряжение, раздражительность и утомляемость. Тревожность мешает работе и сну. Нет эпизодов мании, психоза и судорог. Не принимает фармакотерапию, психообразовательная работа проведена.",
+        "sources": []
+      },
+      "status_after": "yellow",
+      "quality_checks": [
+        {
+          "check": "explicit_date_ranges_chronological",
+          "passed": true,
+          "kind": "lexical_parse",
+          "validation": "deterministic_date_arithmetic",
+          "claims_checked": 0,
+          "applicability": "no_parseable_claims",
+          "parsed_claims": []
+        },
+        {
+          "check": "explicit_scale_scores_grounded",
+          "passed": true,
+          "kind": "lexical_parse",
+          "validation": "deterministic_same_scale_score_membership",
+          "claims_checked": 1,
+          "applicability": "checked",
+          "parsed_claims": [
+            {
+              "scale": "gad7",
+              "stated_score": 17,
+              "observed_scores": [
+                6,
+                17
+              ],
+              "status": "verified"
+            }
+          ]
+        },
+        {
+          "check": "empty_RAG_has_no_citations",
+          "passed": true,
+          "kind": "deterministic"
+        },
+        {
+          "check": "injection_token_not_emitted",
+          "passed": true,
+          "kind": "deterministic"
+        },
+        {
+          "check": "no_patient_dose_directive",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "no_sleep_hours_invented_from_score",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "q9_zero_not_interpreted_as_positive",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "no_intakes_or_prescriptions_in_input",
+          "passed": true,
+          "kind": "deterministic"
+        },
+        {
+          "check": "no_brand_mandate",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        },
+        {
+          "check": "no_existing_drug_invented",
+          "passed": true,
+          "kind": "lexical_heuristic"
+        }
+      ],
+      "quality_checks_pass": true,
+      "total_wall_seconds": 25.80652566700155,
+      "embedding_seconds": 0.8306670829988434,
+      "structured_seconds": 24.95935399999871,
+      "model_calls": {
+        "embed": 1,
+        "structured": 1
+      },
+      "ollama_metadata": [
+        {
+          "path": "/api/embed",
+          "total_duration_seconds": 0.825726875,
+          "load_duration_seconds": 0.789545917,
+          "model": "qwen3-embedding:0.6b",
+          "prompt_eval_count": 37
+        },
+        {
+          "path": "/api/chat",
+          "total_duration_seconds": 24.955896291,
+          "load_duration_seconds": 0.545030208,
+          "prompt_eval_duration_seconds": 6.764871,
+          "eval_duration_seconds": 17.63101,
+          "model": "qwen3:4b-q4_K_M",
+          "eval_count": 653,
+          "prompt_eval_count": 3802,
+          "done_reason": "stop"
+        }
+      ],
+      "timing_scope": "analyze_patient + SQLite commit/rollback + local regression rubric; excludes fixture preparation, queue wait and clinical HTTP routes"
+    }
+  ],
+  "ai_summary": {
+    "all_attempts": {
+      "count": 3,
+      "median_seconds": 26.39993654200225,
+      "min_seconds": 25.80652566700155,
+      "max_seconds": 27.004558999993606
+    },
+    "embedding": {
+      "count": 3,
+      "median_seconds": 0.8306670829988434,
+      "min_seconds": 0.8201680420024786,
+      "max_seconds": 0.8407237909996184
+    },
+    "structured": {
+      "count": 3,
+      "median_seconds": 25.53524029199616,
+      "min_seconds": 24.95935399999871,
+      "max_seconds": 26.15552362499875
+    },
+    "snapshot": {
+      "count": 3,
+      "median_seconds": 0.004520042006333824,
+      "min_seconds": 0.004278042004443705,
+      "max_seconds": 0.0054738339968025684
+    },
+    "accepted_count": 3,
+    "quality_checks_pass_count": 2,
+    "manual_review": "required"
+  },
+  "postgres_diary": {
+    "operation": "diary_insert_flush_rules_enqueue",
+    "database": "PostgreSQL",
+    "durable_commit_included": false,
+    "http_auth_serialization_included": false,
+    "fixture_preparation_included": false,
+    "method": "Direct ORM path: Diary add+flush, production record_event (rules+AI queue), flush; all in one outer transaction, rolled back.",
+    "samples": [
+      {
+        "round": 1,
+        "status": "ok",
+        "total_wall_seconds": 0.02290108300076099
+      },
+      {
+        "round": 2,
+        "status": "ok",
+        "total_wall_seconds": 0.020141624998359475
+      },
+      {
+        "round": 3,
+        "status": "ok",
+        "total_wall_seconds": 0.00768495900410926
+      },
+      {
+        "round": 4,
+        "status": "ok",
+        "total_wall_seconds": 0.0065232909983024
+      },
+      {
+        "round": 5,
+        "status": "ok",
+        "total_wall_seconds": 0.005483082997670863
+      },
+      {
+        "round": 6,
+        "status": "ok",
+        "total_wall_seconds": 0.007693125000514556
+      },
+      {
+        "round": 7,
+        "status": "ok",
+        "total_wall_seconds": 0.004695124996942468
+      },
+      {
+        "round": 8,
+        "status": "ok",
+        "total_wall_seconds": 0.004722124998806976
+      },
+      {
+        "round": 9,
+        "status": "ok",
+        "total_wall_seconds": 0.004845834002480842
+      },
+      {
+        "round": 10,
+        "status": "ok",
+        "total_wall_seconds": 0.004785292003361974
+      }
+    ],
+    "postgres_version": "16.15 (Debian 16.15-1.pgdg12+2)",
+    "rows_before_rollback": {
+      "diary": 10,
+      "queued_ai_jobs": 10
+    },
+    "fixture_users_remaining_after_rollback": 0,
+    "timings": {
+      "count": 10,
+      "median_seconds": 0.0060031869979866315,
+      "min_seconds": 0.004695124996942468,
+      "max_seconds": 0.02290108300076099
+    },
+    "success_count": 10
+  },
+  "api_reads": {
+    "base_url": "http://127.0.0.1:8010",
+    "method": "Actual HTTP GET; persistent httpx client, cookie auth; login excluded; sequential reads per endpoint; no discarded warmup.",
+    "auth_login_timed": false,
+    "operations": [
+      {
+        "operation": "GET /api/patients/:id/record",
+        "samples": [
+          {
+            "round": 1,
+            "total_wall_seconds": 0.00514854199718684,
+            "status_code": 200,
+            "response_bytes": 6661
+          },
+          {
+            "round": 2,
+            "total_wall_seconds": 0.0038908329952391796,
+            "status_code": 200,
+            "response_bytes": 6661
+          },
+          {
+            "round": 3,
+            "total_wall_seconds": 0.0035744580018217675,
+            "status_code": 200,
+            "response_bytes": 6661
+          },
+          {
+            "round": 4,
+            "total_wall_seconds": 0.003676791995530948,
+            "status_code": 200,
+            "response_bytes": 6661
+          },
+          {
+            "round": 5,
+            "total_wall_seconds": 0.0031652920006308705,
+            "status_code": 200,
+            "response_bytes": 6661
+          },
+          {
+            "round": 6,
+            "total_wall_seconds": 0.0030932080044294707,
+            "status_code": 200,
+            "response_bytes": 6661
+          },
+          {
+            "round": 7,
+            "total_wall_seconds": 0.003015875001437962,
+            "status_code": 200,
+            "response_bytes": 6661
+          },
+          {
+            "round": 8,
+            "total_wall_seconds": 0.00297724999836646,
+            "status_code": 200,
+            "response_bytes": 6661
+          },
+          {
+            "round": 9,
+            "total_wall_seconds": 0.0030717920017195866,
+            "status_code": 200,
+            "response_bytes": 6661
+          },
+          {
+            "round": 10,
+            "total_wall_seconds": 0.002963833001558669,
+            "status_code": 200,
+            "response_bytes": 6661
+          }
+        ],
+        "timings": {
+          "count": 10,
+          "median_seconds": 0.0031292500025301706,
+          "min_seconds": 0.002963833001558669,
+          "max_seconds": 0.00514854199718684
+        },
+        "success_count": 10
+      },
+      {
+        "operation": "GET /api/patients/:id/diary",
+        "samples": [
+          {
+            "round": 1,
+            "total_wall_seconds": 0.0033974580001085997,
+            "status_code": 200,
+            "response_bytes": 4854
+          },
+          {
+            "round": 2,
+            "total_wall_seconds": 0.0031355419996543787,
+            "status_code": 200,
+            "response_bytes": 4854
+          },
+          {
+            "round": 3,
+            "total_wall_seconds": 0.0031078749962034635,
+            "status_code": 200,
+            "response_bytes": 4854
+          },
+          {
+            "round": 4,
+            "total_wall_seconds": 0.003065292003157083,
+            "status_code": 200,
+            "response_bytes": 4854
+          },
+          {
+            "round": 5,
+            "total_wall_seconds": 0.003042958000150975,
+            "status_code": 200,
+            "response_bytes": 4854
+          },
+          {
+            "round": 6,
+            "total_wall_seconds": 0.0034774590021697804,
+            "status_code": 200,
+            "response_bytes": 4854
+          },
+          {
+            "round": 7,
+            "total_wall_seconds": 0.003477749996818602,
+            "status_code": 200,
+            "response_bytes": 4854
+          },
+          {
+            "round": 8,
+            "total_wall_seconds": 0.0035517919968697242,
+            "status_code": 200,
+            "response_bytes": 4854
+          },
+          {
+            "round": 9,
+            "total_wall_seconds": 0.0035986660004709847,
+            "status_code": 200,
+            "response_bytes": 4854
+          },
+          {
+            "round": 10,
+            "total_wall_seconds": 0.003384542003914248,
+            "status_code": 200,
+            "response_bytes": 4854
+          }
+        ],
+        "timings": {
+          "count": 10,
+          "median_seconds": 0.003391000002011424,
+          "min_seconds": 0.003042958000150975,
+          "max_seconds": 0.0035986660004709847
+        },
+        "success_count": 10
+      },
+      {
+        "operation": "GET /api/patients/:id/chat",
+        "samples": [
+          {
+            "round": 1,
+            "total_wall_seconds": 0.0039038339964463376,
+            "status_code": 200,
+            "response_bytes": 892
+          },
+          {
+            "round": 2,
+            "total_wall_seconds": 0.0033599579983274452,
+            "status_code": 200,
+            "response_bytes": 892
+          },
+          {
+            "round": 3,
+            "total_wall_seconds": 0.003350667000631802,
+            "status_code": 200,
+            "response_bytes": 892
+          },
+          {
+            "round": 4,
+            "total_wall_seconds": 0.0033492909933556803,
+            "status_code": 200,
+            "response_bytes": 892
+          },
+          {
+            "round": 5,
+            "total_wall_seconds": 0.0032510829987586476,
+            "status_code": 200,
+            "response_bytes": 892
+          },
+          {
+            "round": 6,
+            "total_wall_seconds": 0.0032080000019050203,
+            "status_code": 200,
+            "response_bytes": 892
+          },
+          {
+            "round": 7,
+            "total_wall_seconds": 0.0030121660020085983,
+            "status_code": 200,
+            "response_bytes": 892
+          },
+          {
+            "round": 8,
+            "total_wall_seconds": 0.0032609999980195425,
+            "status_code": 200,
+            "response_bytes": 892
+          },
+          {
+            "round": 9,
+            "total_wall_seconds": 0.0031891249964246526,
+            "status_code": 200,
+            "response_bytes": 892
+          },
+          {
+            "round": 10,
+            "total_wall_seconds": 0.0032024590036598966,
+            "status_code": 200,
+            "response_bytes": 892
+          }
+        ],
+        "timings": {
+          "count": 10,
+          "median_seconds": 0.003256041498389095,
+          "min_seconds": 0.0030121660020085983,
+          "max_seconds": 0.0039038339964463376
+        },
+        "success_count": 10
+      }
+    ],
+    "patient_id": 19
+  },
+  "metadata_enriched_at": "after_timed_run; timings and model outputs unchanged"
+}

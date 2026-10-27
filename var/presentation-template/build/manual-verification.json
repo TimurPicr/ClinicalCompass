@@ -1,0 +1,75 @@
+{
+  "slide_numbers": [
+    {
+      "slide": 1,
+      "number": 1,
+      "passed": true
+    },
+    {
+      "slide": 2,
+      "number": 2,
+      "passed": true
+    },
+    {
+      "slide": 3,
+      "number": 3,
+      "passed": true
+    },
+    {
+      "slide": 4,
+      "number": 4,
+      "passed": true
+    },
+    {
+      "slide": 5,
+      "number": 5,
+      "passed": true
+    },
+    {
+      "slide": 6,
+      "number": 6,
+      "passed": true
+    },
+    {
+      "slide": 7,
+      "number": 7,
+      "passed": true
+    },
+    {
+      "slide": 8,
+      "number": 8,
+      "passed": true
+    },
+    {
+      "slide": 9,
+      "number": 9,
+      "passed": true
+    },
+    {
+      "slide": 10,
+      "number": 10,
+      "passed": true
+    },
+    {
+      "slide": 11,
+      "number": 11,
+      "passed": true
+    },
+    {
+      "slide": 12,
+      "number": 12,
+      "passed": true
+    },
+    {
+      "slide": 13,
+      "number": 13,
+      "passed": true
+    }
+  ],
+  "source_images": {
+    "source_media": 5,
+    "retained_identically": 5,
+    "passed": true
+  },
+  "folio_validator_note": "Header numbering follows source template; generic footer-only checker warnings reviewed and do not apply."
+}

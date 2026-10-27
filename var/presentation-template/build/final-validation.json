@@ -1,0 +1,196 @@
+{
+  "schemaVersion": "presentation-finalization.v1",
+  "finalSha256": "3ed4088991bde5f3133ca97c360b01924fce4e327ca1d471d08c6a6c29a2e5e7",
+  "byteCount": 628398,
+  "packageIntegrity": {
+    "chart_count": 0,
+    "claim_boundary": "Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.",
+    "finding_count": 0,
+    "findings": [],
+    "notes_parts_skipped": 13,
+    "relationship_part_count": 36,
+    "slide_count": 13,
+    "status": "pass",
+    "exitCode": 0,
+    "findingCount": 0,
+    "warnings": []
+  },
+  "presentationLayout": {
+    "finding_count": 0,
+    "findings": [],
+    "font_policy": {
+      "checked_text_script_count": 137,
+      "native_font_rendering_verified": false,
+      "observed_font_families": [
+        "Helvetica Neue"
+      ],
+      "observed_font_use_counts": {
+        "Helvetica Neue": 137
+      },
+      "passed": true,
+      "performed": true
+    },
+    "slide_count": 13,
+    "slide_size_in": [
+      13.3333,
+      7.5
+    ],
+    "warning_count": 11,
+    "warnings": [
+      {
+        "kind": "incorrect_or_missing_actual_slide_folio",
+        "numeric_footer_candidate_count": 0,
+        "slide": 2
+      },
+      {
+        "kind": "incorrect_or_missing_actual_slide_folio",
+        "numeric_footer_candidate_count": 0,
+        "slide": 3
+      },
+      {
+        "kind": "incorrect_or_missing_actual_slide_folio",
+        "numeric_footer_candidate_count": 0,
+        "slide": 4
+      },
+      {
+        "kind": "incorrect_or_missing_actual_slide_folio",
+        "numeric_footer_candidate_count": 0,
+        "slide": 5
+      },
+      {
+        "kind": "incorrect_or_missing_actual_slide_folio",
+        "numeric_footer_candidate_count": 0,
+        "slide": 6
+      },
+      {
+        "kind": "incorrect_or_missing_actual_slide_folio",
+        "numeric_footer_candidate_count": 0,
+        "slide": 7
+      },
+      {
+        "kind": "incorrect_or_missing_actual_slide_folio",
+        "numeric_footer_candidate_count": 0,
+        "slide": 8
+      },
+      {
+        "kind": "incorrect_or_missing_actual_slide_folio",
+        "numeric_footer_candidate_count": 0,
+        "slide": 9
+      },
+      {
+        "kind": "incorrect_or_missing_actual_slide_folio",
+        "numeric_footer_candidate_count": 0,
+        "slide": 10
+      },
+      {
+        "kind": "incorrect_or_missing_actual_slide_folio",
+        "numeric_footer_candidate_count": 0,
+        "slide": 11
+      },
+      {
+        "kind": "incorrect_or_missing_actual_slide_folio",
+        "numeric_footer_candidate_count": 0,
+        "slide": 12
+      }
+    ],
+    "exitCode": 0,
+    "findingCount": 0,
+    "fontPolicy": {
+      "checked_text_script_count": 137,
+      "native_font_rendering_verified": false,
+      "observed_font_families": [
+        "Helvetica Neue"
+      ],
+      "observed_font_use_counts": {
+        "Helvetica Neue": 137
+      },
+      "passed": true,
+      "performed": true
+    }
+  },
+  "fontSelection": {
+    "basis": "reference",
+    "approvedFamilies": [
+      "Helvetica Neue"
+    ],
+    "scriptFonts": {},
+    "referenceSha256": "dcbea63a50a5b360d462d7c7841618374aba5bf64576252163d37ca1d987c0ff",
+    "referenceFontsVerifiedInEncodedText": true,
+    "checked_text_script_count": 137,
+    "native_font_rendering_verified": false,
+    "observed_font_families": [
+      "Helvetica Neue"
+    ],
+    "observed_font_use_counts": {
+      "Helvetica Neue": 137
+    },
+    "passed": true,
+    "performed": true
+  },
+  "firstPartyImport": {
+    "performed": true,
+    "passed": true,
+    "slideCount": 13,
+    "sha256": "3ed4088991bde5f3133ca97c360b01924fce4e327ca1d471d08c6a6c29a2e5e7",
+    "runtimeNodeModules": "/Users/user/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules",
+    "nodeExecutable": "/Users/user/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node"
+  },
+  "nativeTableArithmetic": {
+    "performed": true,
+    "checked_column_count": 0,
+    "checks": [],
+    "claim_boundary": "Displayed-value arithmetic with rounding tolerance; not source-data verification.",
+    "eligible_table_count": 0,
+    "finding_count": 0,
+    "findings": [],
+    "native_table_count": 1,
+    "passed": true,
+    "schema_version": "presentation-native-table-arithmetic.v1",
+    "skipped_tables": [
+      {
+        "reason": "no_numeric_amounts",
+        "slide": 11,
+        "table": 1
+      }
+    ],
+    "slide_count": 13,
+    "warning_count": 0,
+    "warnings": []
+  },
+  "nativeChartTitles": {
+    "performed": true,
+    "checks": [],
+    "finding_count": 0,
+    "findings": [],
+    "native_chart_count": 0,
+    "native_powerpoint_verified": false,
+    "passed": true,
+    "presentation_sha256": "3ed4088991bde5f3133ca97c360b01924fce4e327ca1d471d08c6a6c29a2e5e7",
+    "schema_version": "presentation-native-chart-titles.v1",
+    "slide_count": 13,
+    "source_text_emitted": false,
+    "unresolved_linked_title_count": 0
+  },
+  "sourceDerivedPolicyFlags": [
+    "--expected-slide-size-emu",
+    "12192000,6858000",
+    "--validate-bullet-geometry",
+    "--validate-heading-fit",
+    "--require-native-table-slide",
+    "11",
+    "--folio-mode",
+    "actual_unpadded",
+    "--cover-role",
+    "none",
+    "--approved-font-family",
+    "Helvetica Neue"
+  ],
+  "nativeChartValidation": {
+    "detectedOwnerSlides": [],
+    "detectedChartCount": 0,
+    "targetApplication": "portable",
+    "sourceChartOwnersExplicitlyDeclared": true,
+    "validatorRan": false,
+    "passed": true
+  }
+}

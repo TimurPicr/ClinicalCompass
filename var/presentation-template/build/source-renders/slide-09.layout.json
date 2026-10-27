@@ -1,0 +1,885 @@
+{
+  "schema": "openai.presentation.layout/v5",
+  "unit": "px",
+  "slide": {
+    "id": "sl/udsvah03",
+    "index": 8,
+    "layout": {
+      "id": "ly/ux4ruhcv",
+      "name": "BLANK"
+    },
+    "masterLayoutId": "ly/atofqts7",
+    "backgroundColor": "rgba(25,29,45,1)",
+    "position": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "ly/ux4ruhcv",
+      "name": "BLANK",
+      "type": "blank",
+      "parentLayoutId": "ly/atofqts7",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "ly/atofqts7",
+      "type": "master",
+      "backgroundColor": "lt1",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "id": "sh/10bap4bi",
+      "editable": true,
+      "name": "Google Shape;114;p16",
+      "position": {
+        "left": 40,
+        "top": 26,
+        "width": 1200,
+        "height": 66.02
+      },
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineWidth": 0,
+      "style": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "typeface": "Arial",
+        "color": "#000000",
+        "bold": false,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 9.6,
+          "right": 9.6,
+          "bottom": 9.6,
+          "left": 9.6
+        },
+        "useParagraphSpacing": true
+      }
+    },
+    {
+      "order": 2,
+      "kind": "textbox",
+      "scope": "slide",
+      "id": "sh/gz2twzux",
+      "editable": true,
+      "name": "Google Shape;115;p16",
+      "position": {
+        "left": 112,
+        "top": 38.99,
+        "width": 835.84,
+        "height": 38.02
+      },
+      "geometry": "rect",
+      "lineWidth": 0,
+      "text": "Оценка состояния",
+      "style": {
+        "anchor": 1,
+        "fontSize": 32.67,
+        "typeface": "Helvetica Neue",
+        "color": "#292D42",
+        "bold": true,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "useParagraphSpacing": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Оценка состояния",
+          "style": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Оценка состояния",
+              "anchor": 1,
+              "fontSize": 32.67,
+              "typeface": "Helvetica Neue",
+              "color": "#292D42",
+              "bold": true,
+              "alignment": "left",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "id": "im/2dkjud43",
+      "editable": true,
+      "name": "Google Shape;116;p16",
+      "position": {
+        "left": 55,
+        "top": 37,
+        "width": 44,
+        "height": 44
+      },
+      "contentType": "image/png",
+      "asset": {
+        "contentType": "image/png",
+        "byteLength": 2130
+      },
+      "fillImage": {
+        "contentType": "image/png",
+        "byteLength": 2130
+      }
+    },
+    {
+      "order": 4,
+      "kind": "textbox",
+      "scope": "slide",
+      "id": "sh/exkbupcr",
+      "editable": true,
+      "name": "Google Shape;117;p16",
+      "position": {
+        "left": 1188.82,
+        "top": 38.99,
+        "width": 35.18,
+        "height": 38.02
+      },
+      "geometry": "rect",
+      "lineWidth": 0,
+      "text": "3",
+      "style": {
+        "anchor": 2,
+        "fontSize": 32.67,
+        "typeface": "Helvetica Neue",
+        "color": "#292D42",
+        "bold": true,
+        "italic": false,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "useParagraphSpacing": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3",
+          "style": {
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3",
+              "anchor": 2,
+              "fontSize": 32.67,
+              "typeface": "Helvetica Neue",
+              "color": "#292D42",
+              "bold": true,
+              "alignment": "center",
+              "verticalAlignment": "middle",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "id": "sh/x47ad0ve",
+      "editable": true,
+      "name": "Google Shape;118;p16",
+      "position": {
+        "left": 56,
+        "top": 211.13,
+        "width": 1168,
+        "height": 380
+      },
+      "geometry": "roundRect",
+      "fillColor": "#FFFFFF",
+      "lineWidth": 0,
+      "style": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "typeface": "Arial",
+        "color": "#000000",
+        "bold": false,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 9.6,
+          "right": 9.6,
+          "bottom": 9.6,
+          "left": 9.6
+        },
+        "useParagraphSpacing": true
+      }
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "id": "sh/w3y9kfut",
+      "editable": true,
+      "name": "Google Shape;119;p16",
+      "position": {
+        "left": 86,
+        "top": 241.13,
+        "width": 209.98,
+        "height": 34.02
+      },
+      "geometry": "roundRect",
+      "fillColor": "#FBEAE7",
+      "lineWidth": 0,
+      "style": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "typeface": "Arial",
+        "color": "#000000",
+        "bold": false,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 9.6,
+          "right": 9.6,
+          "bottom": 9.6,
+          "left": 9.6
+        },
+        "useParagraphSpacing": true
+      }
+    },
+    {
+      "order": 7,
+      "kind": "textbox",
+      "scope": "slide",
+      "id": "sh/o72t0f2p",
+      "editable": true,
+      "name": "Google Shape;120;p16",
+      "position": {
+        "left": 100,
+        "top": 246.13,
+        "width": 182.02,
+        "height": 25.01
+      },
+      "geometry": "rect",
+      "lineWidth": 0,
+      "text": "Срочная оценка",
+      "style": {
+        "anchor": 2,
+        "fontSize": 18,
+        "typeface": "Helvetica Neue",
+        "color": "#BF4842",
+        "bold": false,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "useParagraphSpacing": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Срочная оценка",
+          "style": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Срочная оценка",
+              "anchor": 2,
+              "fontSize": 18,
+              "typeface": "Helvetica Neue",
+              "color": "#BF4842",
+              "bold": false,
+              "alignment": "left",
+              "verticalAlignment": "middle",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        }
+      ]
+    },
+    {
+      "order": 8,
+      "kind": "textbox",
+      "scope": "slide",
+      "id": "sh/98batk3u",
+      "editable": true,
+      "name": "Google Shape;121;p16",
+      "position": {
+        "left": 86,
+        "top": 298.13,
+        "width": 520,
+        "height": 49.01
+      },
+      "geometry": "rect",
+      "lineWidth": 0,
+      "text": "Критический ответ в анкете",
+      "style": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "Helvetica Neue",
+        "color": "#292D42",
+        "bold": true,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "useParagraphSpacing": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Критический ответ в анкете",
+          "style": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Критический ответ в анкете",
+              "anchor": 1,
+              "fontSize": 31,
+              "typeface": "Helvetica Neue",
+              "color": "#292D42",
+              "bold": true,
+              "alignment": "left",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        }
+      ]
+    },
+    {
+      "order": 9,
+      "kind": "textbox",
+      "scope": "slide",
+      "id": "sh/m5kby5kj",
+      "editable": true,
+      "name": "Google Shape;122;p16",
+      "position": {
+        "left": 86,
+        "top": 365.13,
+        "width": 529.98,
+        "height": 182.99
+      },
+      "geometry": "rect",
+      "lineWidth": 0,
+      "text": "Критические пункты в дневнике/опроснике\nМгновенно появляется не дожидаясь остального ответа",
+      "style": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "Helvetica Neue",
+        "color": "#758099",
+        "bold": false,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "useParagraphSpacing": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Критические пункты в дневнике/опроснике",
+          "style": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Критические пункты в дневнике/опроснике",
+              "anchor": 1,
+              "fontSize": 25,
+              "typeface": "Helvetica Neue",
+              "color": "#758099",
+              "alignment": "left",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        },
+        {
+          "index": 2,
+          "text": "Мгновенно появляется не дожидаясь остального ответа",
+          "style": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Мгновенно появляется не дожидаясь остального ответа",
+              "anchor": 1,
+              "fontSize": 25,
+              "typeface": "Helvetica Neue",
+              "color": "#758099",
+              "alignment": "left",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        }
+      ]
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "id": "sh/n6tsral4",
+      "editable": true,
+      "name": "Google Shape;123;p16",
+      "position": {
+        "left": 645,
+        "top": 244.13,
+        "width": 1.01,
+        "height": 304
+      },
+      "geometry": "rect",
+      "fillColor": "#DFE5F2",
+      "lineWidth": 0,
+      "style": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "typeface": "Arial",
+        "color": "#000000",
+        "bold": false,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 9.6,
+          "right": 9.6,
+          "bottom": 9.6,
+          "left": 9.6
+        },
+        "useParagraphSpacing": true
+      }
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "id": "sh/wbmt4f2l",
+      "editable": true,
+      "name": "Google Shape;124;p16",
+      "position": {
+        "left": 686,
+        "top": 241.13,
+        "width": 166.99,
+        "height": 34.02
+      },
+      "geometry": "roundRect",
+      "fillColor": "#FCF2DF",
+      "lineWidth": 0,
+      "style": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "typeface": "Arial",
+        "color": "#000000",
+        "bold": false,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 9.6,
+          "right": 9.6,
+          "bottom": 9.6,
+          "left": 9.6
+        },
+        "useParagraphSpacing": true
+      }
+    },
+    {
+      "order": 12,
+      "kind": "textbox",
+      "scope": "slide",
+      "id": "sh/xcvaxk36",
+      "editable": true,
+      "name": "Google Shape;125;p16",
+      "position": {
+        "left": 700,
+        "top": 246.13,
+        "width": 138.99,
+        "height": 25.01
+      },
+      "geometry": "rect",
+      "lineWidth": 0,
+      "text": "Внимание",
+      "style": {
+        "anchor": 2,
+        "fontSize": 18,
+        "typeface": "Helvetica Neue",
+        "color": "#95671D",
+        "bold": false,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "useParagraphSpacing": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Внимание",
+          "style": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Внимание",
+              "anchor": 2,
+              "fontSize": 18,
+              "typeface": "Helvetica Neue",
+              "color": "#95671D",
+              "bold": false,
+              "alignment": "left",
+              "verticalAlignment": "middle",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        }
+      ]
+    },
+    {
+      "order": 13,
+      "kind": "textbox",
+      "scope": "slide",
+      "id": "sh/a9kb25kf",
+      "editable": true,
+      "name": "Google Shape;126;p16",
+      "position": {
+        "left": 686,
+        "top": 298.13,
+        "width": 485.01,
+        "height": 49.01
+      },
+      "geometry": "rect",
+      "lineWidth": 0,
+      "text": "Основание доступно врачу",
+      "style": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "Helvetica Neue",
+        "color": "#292D42",
+        "bold": true,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "useParagraphSpacing": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Основание доступно врачу",
+          "style": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Основание доступно врачу",
+              "anchor": 1,
+              "fontSize": 31,
+              "typeface": "Helvetica Neue",
+              "color": "#292D42",
+              "bold": true,
+              "alignment": "left",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        }
+      ]
+    },
+    {
+      "order": 14,
+      "kind": "textbox",
+      "scope": "slide",
+      "id": "sh/batsval0",
+      "editable": true,
+      "name": "Google Shape;127;p16",
+      "position": {
+        "left": 686,
+        "top": 365.13,
+        "width": 482.02,
+        "height": 125.01
+      },
+      "geometry": "rect",
+      "lineWidth": 0,
+      "text": "Повышенные баллы анкеты\nЯвные пропуски приёма лекарства\nЖалобы",
+      "style": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "Helvetica Neue",
+        "color": "#758099",
+        "bold": false,
+        "italic": false,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "textTransform": "none",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        },
+        "useParagraphSpacing": true
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Повышенные баллы анкеты",
+          "style": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Повышенные баллы анкеты",
+              "anchor": 1,
+              "fontSize": 25,
+              "typeface": "Helvetica Neue",
+              "color": "#758099",
+              "bold": false,
+              "alignment": "left",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        },
+        {
+          "index": 2,
+          "text": "Явные пропуски приёма лекарства",
+          "style": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Явные пропуски приёма лекарства",
+              "anchor": 1,
+              "fontSize": 25,
+              "typeface": "Helvetica Neue",
+              "color": "#758099",
+              "alignment": "left",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        },
+        {
+          "index": 3,
+          "text": "Жалобы",
+          "style": {
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Жалобы",
+              "anchor": 1,
+              "fontSize": 25,
+              "typeface": "Helvetica Neue",
+              "color": "#758099",
+              "alignment": "left",
+              "verticalAlignment": "top",
+              "wrap": "square",
+              "autoFit": "none",
+              "insets": {
+                "top": 0,
+                "right": 0,
+                "bottom": 0,
+                "left": 0
+              },
+              "useParagraphSpacing": true
+            }
+          ],
+          "lineSpacingPercent": 100000
+        }
+      ]
+    }
+  ]
+}

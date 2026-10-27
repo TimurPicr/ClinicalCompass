@@ -1,0 +1,51 @@
+{
+  "capturedAt": "2026-10-26T23:35:19.215Z",
+  "source": "actual-patient-ui",
+  "patient": "Анна Морозова (синтетическая)",
+  "viewPort": {
+    "width": 1280,
+    "height": 1500
+  },
+  "deviceScaleFactor": 2,
+  "diaryBox": {
+    "x": 44,
+    "y": 391.578125,
+    "width": 1192,
+    "height": 801.46875
+  },
+  "initialFormValues": [
+    {
+      "name": "mood",
+      "value": "5"
+    },
+    {
+      "name": "anxiety",
+      "value": "5"
+    },
+    {
+      "name": "sleep",
+      "value": "5"
+    },
+    {
+      "name": "energy",
+      "value": "5"
+    },
+    {
+      "name": "wellbeing",
+      "value": "5"
+    }
+  ],
+  "recordClip": {
+    "x": 44,
+    "y": 391.578125,
+    "width": 1192,
+    "height": 822
+  },
+  "clinicalDataSubmitted": false,
+  "mutationRequests": [
+    {
+      "method": "POST",
+      "url": "/api/auth/login"
+    }
+  ]
+}
