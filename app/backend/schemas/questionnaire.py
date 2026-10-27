@@ -35,3 +35,7 @@ class QuestionnaireResult(BaseModel):
     score: int
     max_score: int
     note: str
+
+
+class ScaleSubmission(BaseModel):
+    answers: list[StrictInt] = Field(min_length=1, max_length=200)

@@ -1,255 +1,38 @@
-import { useEffect, useState } from "react";
-import "./App.css";
+import { useCallback, useEffect, useState } from 'react'
+import { api, ApiError } from './api'
+import type { User } from './types'
+import { AuthPage } from './pages/AuthPage'
+import { Dashboard } from './pages/Dashboard'
+import { InvitationAcceptance } from './components/InvitationAcceptance'
+import './App.css'
 
-
-const API_URL = "http://127.0.0.1:8000";
-
-
-interface Question {
-  id: number;
-  text: string;
-  options: string[];
-}
-
-
-interface Questionnaire {
-  id: string;
-  title: string;
-  questions: Question[];
-}
-
-
-interface QuestionnaireResult {
-  score: number;
-  max_score: number;
-  note: string;
-}
-
-
-interface Recommendation {
-  code: string;
-  category: "mandatory" | "desirable";
-  title: string;
-  description: string;
-  source: string;
-}
-
-
-function App() {
-
-  const [recommendations, setRecommendations] =
-  useState<Recommendation[]>([]);
-
-  const [questionnaire, setQuestionnaire] =
-    useState<Questionnaire | null>(null);
-
-  const [answers, setAnswers] =
-    useState<Record<number, number>>({});
-
-  const [result, setResult] =
-    useState<QuestionnaireResult | null>(null);
-
-  const [error, setError] = useState("");
-
-
+export default function App() {
+  const [user, setUser] = useState<User | null>(null)
+  const [invitation, setInvitation] = useState(() => new URLSearchParams(window.location.hash.slice(1)).get('invite') ?? '')
+  const clearInvitation = useCallback(() => { setInvitation(''); window.history.replaceState(null, '', window.location.pathname + window.location.search) }, [])
+  const acceptInvitation = useCallback((user: User) => { setUser(user); clearInvitation() }, [clearInvitation])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState('')
+  const [revision, setRevision] = useState(0)
   useEffect(() => {
-    fetch(`${API_URL}/api/questionnaires/demo`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Ошибка загрузки вопросов");
-        }
-
-        return response.json();
-      })
-      .then((data: Questionnaire) => {
-        setQuestionnaire(data);
-      })
-      .catch(() => {
-        setError("Не удалось загрузить опросник");
-      });
-  }, []);
-
-
-  function selectAnswer(
-    questionId: number,
-    answer: number
-  ) {
-    setAnswers((previous) => ({
-      ...previous,
-      [questionId]: answer,
-    }));
-
-    setResult(null);
-  }
-
-
-  async function submitAnswers() {
-    if (!questionnaire) {
-      return;
-    }
-
-    const answerList = questionnaire.questions.map(
-      (question) => answers[question.id]
-    );
-
-    const recommendationResponse = await fetch(
-  `${API_URL}/api/recommendations/preview`,
-  {
-    method: "POST",
-
-    headers: {
-      "Content-Type": "application/json",
-    },
-
-    body: JSON.stringify({
-      answers: answerList,
-      urgent_help_requested: false,
-    }),
-  }
-);
-
-if (!recommendationResponse.ok) {
-  throw new Error("Не удалось получить рекомендации");
-}
-
-const recommendationData = await recommendationResponse.json();
-
-setRecommendations(
-  recommendationData.recommendations
-);
-
-    try {
-      setError("");
-
-      const response = await fetch(
-        `${API_URL}/api/questionnaires/demo/submit`,
-        {
-          method: "POST",
-
-          headers: {
-            "Content-Type": "application/json",
-          },
-
-          body: JSON.stringify({
-            answers: answerList,
-          }),
-        }
-      );
-
-      if (!response.ok) {
-        throw new Error("Ошибка отправки ответов");
-      }
-
-      const data: QuestionnaireResult =
-        await response.json();
-
-      setResult(data);
-
-    } catch {
-      setError("Не удалось отправить ответы");
-    }
-  }
-
-
-  if (!questionnaire) {
-    return (
-      <div className="container">
-        {error || "Загрузка опросника..."}
-      </div>
-    );
-  }
-
-
-  const allAnswered = questionnaire.questions.every(
-    (question) => answers[question.id] !== undefined
-  );
-
-
-  return (
+    const updateInvitation = () => setInvitation(new URLSearchParams(window.location.hash.slice(1)).get('invite') ?? '')
+    window.addEventListener('hashchange', updateInvitation)
+    return () => window.removeEventListener('hashchange', updateInvitation)
+  }, [])
+  useEffect(() => {
+    let active = true
+    api<User>('/auth/me').then(user => { if (active) setUser(user) }).catch(e => {
+      if (active && !(e instanceof ApiError && e.status === 401)) setError(e.message)
+    }).finally(() => { if (active) setLoading(false) })
+    const expired = () => { setUser(null); setError('Сессия завершена. Войдите снова.') }
+    window.addEventListener('session-expired', expired)
+    return () => { active = false; window.removeEventListener('session-expired', expired) }
+  }, [revision])
+  if (loading) return <main className="auth" role="status">Загрузка Clinical Compass…</main>
+  if (!user) return <>{error && <div role="alert" className="banner error">{error}<button onClick={() => { setError(''); setLoading(true); setRevision(r => r + 1) }}>Повторить</button></div>}<AuthPage invitation={!!invitation} onLogin={user => { setError(''); setUser(user) }} /></>
+  return <><header><a href="#" className="brand">✦ Clinical Compass</a><span>{user.full_name} · {user.role === 'doctor' ? 'Врач' : 'Пациент'}</span><button className="secondary" onClick={async () => { try { await api('/auth/logout', {}); setUser(null); setError('') } catch (e) { setError(e instanceof Error ? e.message : 'Ошибка выхода') } }}>Выйти</button></header>
     <main className="container">
-
-      {recommendations.length > 0 && (
-        <section>
-          <h2>Рекомендации</h2>
-
-          {recommendations.map((item) => (
-            <div key={item.code}>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
-            </div>
-          ))}
-        </section>
-      )}
-
-      <h1>Clinical Compass</h1>
-
-      <h2>{questionnaire.title}</h2>
-
-      <p>
-        Демонстрационный опросник.
-        Не предназначен для медицинской диагностики.
-      </p>
-
-      {questionnaire.questions.map((question) => (
-
-        <fieldset
-          key={question.id}
-          className="question"
-        >
-
-          <legend>{question.text}</legend>
-
-          {question.options.map((option, index) => (
-
-            <label key={index} className="option">
-
-              <input
-                type="radio"
-                name={`question-${question.id}`}
-                checked={
-                  answers[question.id] === index
-                }
-                onChange={() =>
-                  selectAnswer(question.id, index)
-                }
-              />
-
-              {option}
-
-            </label>
-
-          ))}
-
-        </fieldset>
-
-      ))}
-
-      <button
-        onClick={submitAnswers}
-        disabled={!allAnswered}
-      >
-        Завершить опрос
-      </button>
-
-      {result && (
-        <div className="result">
-
-          <h3>Результат</h3>
-
-          <p>
-            Баллов: {result.score} из {result.max_score}
-          </p>
-
-          <p>{result.note}</p>
-
-        </div>
-      )}
-
-      {error && <p className="error">{error}</p>}
-
-    </main>
-  );
+      {error && <p role="alert" className="error">{error}</p>}{invitation ? <InvitationAcceptance token={invitation} onAccepted={acceptInvitation} onCancel={clearInvitation} /> : <Dashboard user={user} />}
+    </main><footer>Clinical Compass</footer>
+  </>
 }
-
-
-export default App;

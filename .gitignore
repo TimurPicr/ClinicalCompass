@@ -10,3 +10,12 @@ dist/
 
 .idea/
 .vscode/
+*.db
+coverage/
+artifacts/
+qdrant_db/
+test-results/
+playwright-report/
+.env.*
+!.env.example
+backups/

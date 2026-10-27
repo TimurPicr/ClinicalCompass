@@ -1,12 +1,4 @@
-from fastapi.testclient import TestClient
-
-from app.backend.main import app
-
-
-client = TestClient(app)
-
-
-def test_health():
+def test_health(client):
     response = client.get("/health")
 
     assert response.status_code == 200
@@ -15,7 +7,7 @@ def test_health():
     }
 
 
-def test_get_questionnaire():
+def test_get_questionnaire(client):
     response = client.get(
         "/api/questionnaires/demo"
     )
@@ -28,7 +20,8 @@ def test_get_questionnaire():
     assert len(data["questions"]) == 5
 
 
-def test_submit_questionnaire():
+def test_submit_questionnaire(patient_client):
+    client = patient_client
     response = client.post(
         "/api/questionnaires/demo/submit",
         json={
@@ -44,7 +37,8 @@ def test_submit_questionnaire():
     assert data["max_score"] == 15
 
 
-def test_invalid_answers():
+def test_invalid_answers(patient_client):
+    client = patient_client
     response = client.post(
         "/api/questionnaires/demo/submit",
         json={

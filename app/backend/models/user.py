@@ -4,6 +4,8 @@ from sqlalchemy import (
     DateTime,
     Integer,
     String,
+    ForeignKey,
+    CheckConstraint,
 )
 
 from sqlalchemy.orm import (
@@ -16,6 +18,7 @@ from app.database.base import Base
 
 class User(Base):
     __tablename__ = "users"
+    __table_args__ = (CheckConstraint("role IN ('patient', 'doctor')", name="ck_users_role"),)
 
     id: Mapped[int] = mapped_column(
         Integer,
@@ -44,6 +47,8 @@ class User(Base):
         nullable=False,
         default="patient",
     )
+
+    doctor_id: Mapped[int | None] = mapped_column(ForeignKey("users.id"), index=True)
 
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True),

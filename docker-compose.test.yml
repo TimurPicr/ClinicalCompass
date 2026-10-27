@@ -1,0 +1,17 @@
+# Separate project/container/volume: never points to the application database.
+services:
+  postgresql:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: cc_test
+      POSTGRES_PASSWORD: synthetic-test-only
+      POSTGRES_DB: clinical_compass_test
+    ports:
+      - "127.0.0.1:55432:5432"
+    tmpfs:
+      - /var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cc_test -d clinical_compass_test"]
+      interval: 2s
+      timeout: 2s
+      retries: 30

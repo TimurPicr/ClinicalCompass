@@ -1,0 +1,15 @@
+.git
+.env
+.env.*
+!.env.example
+.venv
+**/node_modules
+**/dist
+**/__pycache__
+.pytest_cache
+*.db
+qdrant_db
+clinical_guidelines
+.codex
+.agents
+artifacts

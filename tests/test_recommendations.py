@@ -1,12 +1,5 @@
-from fastapi.testclient import TestClient
-
-from app.backend.main import app
-
-
-client = TestClient(app)
-
-
-def test_sleep_recommendation():
+def test_sleep_recommendation(doctor_client):
+    client = doctor_client
     response = client.post(
         "/api/recommendations/preview",
         json={
@@ -27,7 +20,8 @@ def test_sleep_recommendation():
     assert "sleep_discussion" in codes
 
 
-def test_no_recommendations():
+def test_no_recommendations(doctor_client):
+    client = doctor_client
     response = client.post(
         "/api/recommendations/preview",
         json={
@@ -40,7 +34,8 @@ def test_no_recommendations():
     assert response.json()["recommendations"] == []
 
 
-def test_urgent_request():
+def test_urgent_request(doctor_client):
+    client = doctor_client
     response = client.post(
         "/api/recommendations/preview",
         json={
@@ -57,7 +52,8 @@ def test_urgent_request():
     )
 
 
-def test_invalid_answers():
+def test_invalid_answers(doctor_client):
+    client = doctor_client
     response = client.post(
         "/api/recommendations/preview",
         json={
